@@ -36,19 +36,22 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="flex flex-wrap gap-x-10 gap-y-3 font-sans text-sm font-normal text-porcelain/75">
-            <span>{EMAIL}</span>
-            <span>{PHONE_DISPLAY}</span>
-            {INSTAGRAM && (
-              <a
-                href={INSTAGRAM}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link-underline"
-              >
-                Instagram
-              </a>
-            )}
+          <div>
+            <p className="eyebrow">Contact</p>
+            <div className="mt-4 flex flex-wrap gap-x-10 gap-y-3 font-sans text-sm font-normal text-porcelain/75">
+              <span>{EMAIL}</span>
+              <span>{PHONE_DISPLAY}</span>
+              {INSTAGRAM && (
+                <a
+                  href={INSTAGRAM}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-underline"
+                >
+                  Instagram
+                </a>
+              )}
+            </div>
           </div>
         </div>
 
