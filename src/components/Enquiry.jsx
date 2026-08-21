@@ -9,12 +9,7 @@ const field =
 export default function Enquiry() {
   const [searchParams] = useSearchParams()
   const preselected = searchParams.get('stone') || ''
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    stone: preselected,
-    message: '',
-  })
+  const [form, setForm] = useState({ stone: preselected, message: '' })
   const [error, setError] = useState('')
 
   // The pathname does not change between /contact?stone=A and ?stone=B, so the
@@ -29,17 +24,15 @@ export default function Enquiry() {
   }
 
   const compose = () => {
-    if (!form.name.trim() || !form.message.trim()) {
-      setError('Add your name and a short message, then send.')
+    if (!form.message.trim()) {
+      setError('Add a short message, then send.')
       return null
     }
-    const lines = [
-      `Name: ${form.name}`,
-      form.email && `Email: ${form.email}`,
-      form.stone && `Stone of interest: ${form.stone}`,
-      '',
-      form.message,
-    ].filter(Boolean)
+    // No name or email field: Gmail sends from the visitor's own account and
+    // WhatsApp from their number, so both are already on the message.
+    const lines = []
+    if (form.stone) lines.push(`Stone of interest: ${form.stone}`, '')
+    lines.push(form.message)
     return {
       subject: form.stone
         ? `Enquiry — ${form.stone}`
@@ -107,34 +100,6 @@ export default function Enquiry() {
 
           <div className="reveal lg:col-span-7">
             <div className="space-y-8">
-              <div className="grid gap-8 sm:grid-cols-2">
-                <div>
-                  <label htmlFor="name" className="eyebrow text-ink/60">
-                    Name
-                  </label>
-                  <input
-                    id="name"
-                    className={`${field} mt-3`}
-                    value={form.name}
-                    onChange={update('name')}
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="eyebrow text-ink/60">
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    className={`${field} mt-3`}
-                    value={form.email}
-                    onChange={update('email')}
-                    placeholder="you@example.com"
-                  />
-                </div>
-              </div>
-
               <div>
                 <label htmlFor="stone" className="eyebrow text-ink/60">
                   Stone of interest
