@@ -24,7 +24,9 @@ export default function Footer() {
             </p>
           </div>
 
-          <nav aria-label="Footer">
+          {/* Centred in its own track so it reads as the middle of the row,
+              while the links stay left-aligned to each other. */}
+          <nav aria-label="Footer" className="md:justify-self-center">
             <ul className="flex flex-col gap-3">
               {pages.map((page) => (
                 <li key={page.to}>
