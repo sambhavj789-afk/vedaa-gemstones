@@ -47,6 +47,14 @@ export default function Enquiry() {
     window.open(gmailCompose(composed.subject, composed.body), '_blank', 'noopener')
   }
 
+  const sendMailto = () => {
+    const composed = compose()
+    if (!composed) return
+    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(
+      composed.subject
+    )}&body=${encodeURIComponent(composed.body)}`
+  }
+
   const sendWhatsApp = () => {
     const composed = compose()
     if (!composed) return
@@ -142,20 +150,29 @@ export default function Enquiry() {
                 </p>
               )}
 
-              <div className="flex flex-wrap gap-4 pt-2">
+              <div className="pt-2">
+                <div className="flex flex-wrap gap-4">
+                  <button
+                    type="button"
+                    onClick={sendWhatsApp}
+                    className="bg-ink px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain transition-opacity duration-500 hover:opacity-85"
+                  >
+                    Message on WhatsApp
+                  </button>
+                  <button
+                    type="button"
+                    onClick={sendEmail}
+                    className="border border-ink/30 px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-ink transition-colors duration-500 hover:border-ink"
+                  >
+                    Send email
+                  </button>
+                </div>
                 <button
                   type="button"
-                  onClick={sendEmail}
-                  className="bg-ink px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain transition-opacity duration-500 hover:opacity-85"
+                  onClick={sendMailto}
+                  className="link-underline mt-5 font-sans text-[0.66rem] uppercase tracking-widest2 text-ink/50"
                 >
-                  Send email
-                </button>
-                <button
-                  type="button"
-                  onClick={sendWhatsApp}
-                  className="border border-ink/30 px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-ink transition-colors duration-500 hover:border-ink"
-                >
-                  Message on WhatsApp
+                  Not a Gmail user? Use your own mail app
                 </button>
               </div>
             </div>
