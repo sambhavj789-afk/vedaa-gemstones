@@ -21,6 +21,10 @@ export default function Enquiry() {
     setForm((f) => ({ ...f, [key]: e.target.value }))
   }
 
+  // "No preference yet" and "Something not listed" name no actual stone, so
+  // those are the only cases where a typed message is needed.
+  const named = form.stone && form.stone !== OTHER_STONE
+
   const compose = () => {
     // The body is exactly what the visitor typed. Gmail sends from their own
     // account and WhatsApp from their number, so identity is already attached,
@@ -31,7 +35,7 @@ export default function Enquiry() {
         : 'Enquiry — Vedaa gemstones',
       // Nothing typed: fall back to the same line the catalogue links use, so
       // picking a stone and sending straight away still reads as a sentence.
-      body: form.message.trim() || enquiryMessage(form.stone),
+      body: (named ? '' : form.message.trim()) || enquiryMessage(form.stone),
     }
   }
 
@@ -117,19 +121,21 @@ export default function Enquiry() {
                 </select>
               </div>
 
-              <div>
-                <label htmlFor="message" className="eyebrow text-ink/60">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className={`${field} mt-3 resize-none`}
-                  value={form.message}
-                  onChange={update('message')}
-                  placeholder="Carat range, colour, certification, timeline"
-                />
-              </div>
+              {!named && (
+                <div>
+                  <label htmlFor="message" className="eyebrow text-ink/60">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={4}
+                    className={`${field} mt-3 resize-none`}
+                    value={form.message}
+                    onChange={update('message')}
+                    placeholder="Carat range, colour, certification, timeline"
+                  />
+                </div>
+              )}
 
               <div className="pt-2">
                 <div className="flex flex-wrap gap-4">
