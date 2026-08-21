@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
-import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER } from '../data/contact'
+import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, gmailCompose } from '../data/contact'
 
 const field =
   'w-full border-b border-ink/25 bg-transparent py-3 font-sans text-[0.95rem] text-ink placeholder-ink/40 focus:border-ink focus:outline-none'
@@ -51,9 +51,7 @@ export default function Enquiry() {
   const sendEmail = () => {
     const composed = compose()
     if (!composed) return
-    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(
-      composed.subject
-    )}&body=${encodeURIComponent(composed.body)}`
+    window.open(gmailCompose(composed.subject, composed.body), '_blank', 'noopener')
   }
 
   const sendWhatsApp = () => {
@@ -86,13 +84,17 @@ export default function Enquiry() {
 
             <div className="mt-12 space-y-3">
               <a
-                href={`tel:+${WHATSAPP_NUMBER}`}
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="link-underline block font-sans text-xl font-normal tracking-wide"
               >
                 {PHONE_DISPLAY}
               </a>
               <a
-                href={`mailto:${EMAIL}`}
+                href={gmailCompose('Enquiry — Vedaa gemstones')}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="link-underline block font-sans text-sm text-ink/70"
               >
                 {EMAIL}

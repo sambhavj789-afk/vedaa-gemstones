@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { EMAIL, INSTAGRAM, PHONE_DISPLAY, WHATSAPP_NUMBER } from '../data/contact'
+import { EMAIL, INSTAGRAM, PHONE_DISPLAY, WHATSAPP_LINK, gmailCompose } from '../data/contact'
 
 const pages = [
   { to: '/collection', label: 'Collection' },
@@ -37,10 +37,20 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-x-10 gap-y-3 font-sans text-sm font-normal text-porcelain/75">
-            <a href={`mailto:${EMAIL}`} className="link-underline">
+            <a
+              href={gmailCompose('Enquiry — Vedaa gemstones')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline"
+            >
               {EMAIL}
             </a>
-            <a href={`tel:+${WHATSAPP_NUMBER}`} className="link-underline">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline"
+            >
               {PHONE_DISPLAY}
             </a>
             {INSTAGRAM && (

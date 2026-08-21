@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import WhatsAppButton from './components/WhatsAppButton'
 import Home from './pages/Home'
 import CollectionPage from './pages/CollectionPage'
 import StonePage from './pages/StonePage'
@@ -35,7 +34,6 @@ export default function App() {
         </div>
       </main>
       <Footer />
-      <WhatsAppButton />
     </>
   )
 }
