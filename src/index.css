@@ -1,0 +1,269 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #14100c;
+  --basalt: #1f1813;
+  --brass: #a98247;
+  --gilt: #dfc48c;
+  --linen: #d8cec2;
+  --porcelain: #f3eee8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--ink);
+    color: var(--porcelain);
+    font-family: Jost, system-ui, sans-serif;
+    font-weight: 300;
+  }
+
+  ::selection {
+    background: var(--brass);
+    color: var(--ink);
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--gilt);
+    outline-offset: 4px;
+  }
+}
+
+@layer components {
+  /* Small letterspaced caps — used for eyebrows, nav, labels */
+  .eyebrow {
+    @apply font-sans text-[0.62rem] uppercase tracking-widest2 text-brass;
+  }
+
+  .rule {
+    @apply h-px w-full bg-porcelain/[0.12];
+  }
+
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 1s cubic-bezier(0.2, 0.7, 0.2, 1),
+      transform 1s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Dissolves the photograph's dark backdrop into the page ground so the
+     stone appears to float on the site itself, with no visible image edge. */
+  .dissolve::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse 72% 62% at 50% 48%,
+      rgba(20, 16, 12, 0) 0%,
+      rgba(20, 16, 12, 0.35) 62%,
+      var(--ink) 96%
+    );
+  }
+
+  .link-underline {
+    background-image: linear-gradient(var(--brass), var(--brass));
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0 1px;
+    transition: background-size 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .link-underline:hover,
+  .link-underline:focus-visible {
+    background-size: 100% 1px;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.rise-1,
+.rise-2,
+.rise-3 {
+  animation: fadeUp 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.rise-2 {
+  animation-delay: 0.25s;
+}
+
+.rise-3 {
+  animation-delay: 0.5s;
+}
+
+@keyframes glowIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.glow-in {
+  animation: glowIn 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes nameIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    letter-spacing: 0.08em;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    letter-spacing: normal;
+  }
+}
+
+.name-in {
+  animation: nameIn 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+/* Hero entrance: the photograph settles, then the words arrive in order */
+@keyframes slowZoom {
+  from {
+    transform: scale(1.07);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.hero-zoom {
+  animation: slowZoom 2.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.hero-item {
+  opacity: 0;
+  animation: fadeUp 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+.d1 {
+  animation-delay: 0.25s;
+}
+
+.d2 {
+  animation-delay: 0.5s;
+}
+
+.d3 {
+  animation-delay: 0.75s;
+}
+
+/* Route change: the new page rises in softly */
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.page-in {
+  animation: pageIn 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+/* Colour auras breathe slowly instead of sitting static */
+@keyframes auraPulse {
+  0%,
+  100% {
+    opacity: 0.16;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.aura-pulse {
+  animation: auraPulse 7s ease-in-out infinite;
+}
+
+.wa-in {
+  opacity: 0;
+  animation: fadeUp 0.8s 1.6s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+@keyframes fillX {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.fill-x {
+  transform-origin: left;
+  animation: fillX 5000ms linear both;
+}
+
+.draw-x {
+  transform-origin: left;
+  animation: fillX 900ms cubic-bezier(0.2, 0.7, 0.2, 1) 200ms both;
+}
+
+@keyframes glowIn {
+  from {
+    opacity: 0;
+    transform: scale(0.55);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.glow-in {
+  animation: glowIn 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

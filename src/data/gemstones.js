@@ -1,0 +1,161 @@
+// All copy below is from the Vedaa catalogue, lightly tightened.
+// The Amethyst entry is new — it has no page in the catalogue. Review its wording.
+
+export const gemstones = [
+  {
+    slug: 'emerald',
+    name: 'Emerald',
+    species: 'Beryl',
+    image: '/images/emerald.jpg',
+    macro: '/images/macro/emerald.jpg',
+    accent: '#1E7A4F',
+    origins: ['Colombia', 'Zambia', 'Brazil'],
+    note: 'Depth of colour over everything else.',
+    description:
+      'We source exceptional natural emeralds from Colombia, Zambia and Brazil — the regions that produce the world’s finest green gemstones. Each stone is selected for depth of colour, natural integrity and lasting value.',
+  },
+  {
+    slug: 'ruby',
+    name: 'Ruby',
+    species: 'Corundum',
+    image: '/images/ruby.jpg',
+    macro: '/images/macro/ruby.jpg',
+    accent: '#A31626',
+    origins: ['Myanmar', 'Mozambique', 'Sri Lanka'],
+    note: 'Vivid red, unheated wherever possible.',
+    description:
+      'Premium rubies from Myanmar, Mozambique and Sri Lanka, renowned for exceptional colour and brilliance. Every stone is chosen for its vivid red hue, natural authenticity and lasting value.',
+  },
+  {
+    slug: 'blue-sapphire',
+    name: 'Blue Sapphire',
+    species: 'Corundum',
+    image: '/images/blue-sapphire.jpg',
+    macro: '/images/macro/blue-sapphire.jpg',
+    accent: '#2946C4',
+    origins: ['Sri Lanka', 'Kashmir', 'Madagascar'],
+    note: 'Ethically mined, single-origin where stated.',
+    description:
+      'Our natural blue sapphires are ethically mined from renowned origins including Sri Lanka, Kashmir and Madagascar. Each is selected for its rich blue tone and exceptional quality.',
+  },
+  {
+    slug: 'yellow-sapphire',
+    name: 'Yellow Sapphire',
+    species: 'Corundum',
+    image: '/images/yellow-sapphire.jpg',
+    macro: '/images/macro/yellow-sapphire.jpg',
+    accent: '#D9A521',
+    origins: ['Sri Lanka', 'Madagascar', 'Tanzania'],
+    note: 'Prized for saturation and clarity together.',
+    description:
+      'Natural yellow sapphires from top origins including Sri Lanka, Madagascar and Tanzania, prized for rich colour and clarity. Each stone is ethically sourced and chosen to reflect timeless elegance.',
+  },
+  {
+    slug: 'pink-sapphire',
+    name: 'Pink Sapphire',
+    species: 'Corundum',
+    image: '/images/pink-sapphire.jpg',
+    macro: '/images/macro/pink-sapphire.jpg',
+    accent: '#C4527E',
+    origins: ['Sri Lanka', 'Madagascar'],
+    note: 'Cut to hold the hue, not just the weight.',
+    description:
+      'Pink sapphires sourced from trusted mines in Sri Lanka and Madagascar, chosen for vibrant hue and natural brilliance. Each stone is ethically procured and expertly cut to show its beauty in every detail.',
+  },
+  {
+    slug: 'pearl',
+    name: 'Pearl',
+    species: 'Organic — nacre',
+    image: '/images/pearl.jpg',
+    macro: '/images/macro/pearl.jpg',
+    accent: '#C9C0B0',
+    origins: ['Japan', 'South Sea'],
+    note: 'Selected on lustre before size.',
+    description:
+      'Our pearls come from the finest waters of Japan and the South Sea, selected for natural lustre and a smooth finish. Timeless in appeal, each pearl reflects understated elegance.',
+  },
+  {
+    slug: 'tahitian-pearl',
+    name: 'Tahitian Pearl',
+    species: 'Organic — nacre',
+    image: '/images/tahitian-pearl.jpg',
+    macro: '/images/macro/tahitian-pearl.jpg',
+    accent: '#7A6B72',
+    origins: ['French Polynesia'],
+    note: 'No two overtones are alike.',
+    description:
+      'Tahitian pearls from the lagoons of French Polynesia, celebrated for their natural dark hues and radiant lustre. Each pearl carries a distinctive allure that makes every piece exceptional.',
+  },
+  {
+    slug: 'white-coral',
+    name: 'White Coral',
+    species: 'Organic',
+    image: '/images/white-coral.jpg',
+    macro: '/images/macro/white-coral.jpg',
+    accent: '#D8CFC0',
+    origins: ['Mediterranean Sea', 'Italy'],
+    note: 'Slow-grown, dense, and worked by hand.',
+    description:
+      'White coral is valued for its smooth texture and soft, natural lustre. The finest originates in the Mediterranean, particularly along the coasts of Italy, where slow-growing coral forms the dense structure prized in fine jewellery.',
+  },
+  {
+    slug: 'aquamarine',
+    name: 'Aquamarine',
+    species: 'Beryl',
+    image: '/images/aquamarine.jpg',
+    macro: '/images/macro/aquamarine.jpg',
+    accent: '#57B4D6',
+    origins: ['Brazil', 'Madagascar'],
+    note: 'Clarity first — the colour follows.',
+    description:
+      'Aquamarine, as a symbol of serene luxury: pure, luminous and timeless. Formed deep within the earth over millions of years, the finest stones come from Brazil and Madagascar, known for exceptional clarity and a tranquil blue hue.',
+  },
+  {
+    slug: 'black-opal',
+    name: 'Black Opal',
+    species: 'Hydrated silica',
+    image: '/images/black-opal.jpg',
+    macro: '/images/macro/black-opal.jpg',
+    accent: '#2F8078',
+    origins: ['Australia'],
+    note: 'The rarest body tone in opal.',
+    description:
+      'Our black opals are sourced from Australia, home to the world’s finest and rarest deposits. Formed over millions of years within ironstone, their naturally dark body highlights the vivid flashes of colour that make each stone extraordinary.',
+  },
+  {
+    slug: 'turquoise',
+    name: 'Turquoise',
+    species: 'Phosphate',
+    image: '/images/turquoise.jpg',
+    macro: '/images/macro/turquoise.jpg',
+    accent: '#37A79E',
+    origins: ['Iran', 'United States'],
+    note: 'Untreated material, matrix intact.',
+    description:
+      'Turquoise sourced from renowned mines in Iran and the United States, known for producing some of the finest material available. Formed in mineral-rich arid regions over millions of years, it is admired for its vibrant blue and enduring appeal.',
+  },
+  {
+    slug: 'tanzanite',
+    name: 'Tanzanite',
+    species: 'Zoisite',
+    image: '/images/tanzanite.jpg',
+    macro: '/images/macro/tanzanite.jpg',
+    accent: '#5B4FC7',
+    origins: ['Tanzania'],
+    note: 'One deposit on earth. Nowhere else.',
+    description:
+      'Tanzanite is sourced exclusively from Tanzania, the only place in the world where it is found. Discovered in the foothills of Mount Kilimanjaro, it is treasured for captivating violet-blue hues and remarkable rarity.',
+  },
+  {
+    slug: 'amethyst',
+    name: 'Amethyst',
+    species: 'Quartz',
+    image: '/images/amethyst.jpg',
+    macro: '/images/macro/amethyst.jpg',
+    accent: '#7B5AA6',
+    origins: ['Brazil', 'Uruguay', 'Zambia'],
+    note: 'Judged on evenness of colour across the stone.',
+    description:
+      'Our amethyst is sourced from Brazil, Uruguay and Zambia, the origins that yield the deepest and most even violet. Each stone is selected for saturation that holds from centre to edge, and cut to keep that colour under every light.',
+  },
+]
