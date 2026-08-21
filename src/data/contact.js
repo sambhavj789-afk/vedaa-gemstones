@@ -26,10 +26,10 @@ export const gmailCompose = (subject = '', body = '') =>
 export const OTHER_STONE = 'Something not listed'
 
 export const enquiryMessage = (stone = '') => {
-  if (!stone) return 'Hi, I would like to enquire about a gemstone.'
+  // Neither the blank option nor the catch-all names an actual stone, and
   // "...about the Something not listed." would not be a sentence.
-  if (stone === OTHER_STONE)
-    return 'Hi, I am looking for a stone that is not listed on your site.'
+  if (!stone || stone === OTHER_STONE)
+    return 'Hi, I would like to enquire about a gemstone.'
   return `Hi, I would like to enquire about the ${stone}.`
 }
 
