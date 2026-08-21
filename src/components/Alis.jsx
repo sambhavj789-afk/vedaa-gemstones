@@ -27,7 +27,7 @@ export default function Alis() {
 
           <div className="reveal">
             <img
-              src="/images/packaging.jpg"
+              src="/images/packaging.webp"
               alt="A certified Vedaa stone in its presentation box with certificate"
               loading="lazy"
               className="aspect-square w-full object-cover"

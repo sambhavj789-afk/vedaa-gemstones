@@ -38,7 +38,7 @@ export default function Standard() {
 
           <div className="reveal lg:col-span-7">
             <img
-              src="/images/atelier.jpg"
+              src="/images/atelier.webp"
               alt="A loupe and tweezers on a workbench, examining loose stones"
               loading="lazy"
               className="aspect-[3/2] w-full object-cover"

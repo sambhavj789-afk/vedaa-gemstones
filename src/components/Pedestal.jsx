@@ -57,7 +57,7 @@ export default function Pedestal({ stones = gemstones }) {
                   key={stone.slug}
                   src={stone.image}
                   alt={`${stone.name} on the Vedaa stand`}
-                  loading={i < 2 ? 'eager' : 'lazy'}
+                  loading="lazy"
                   aria-hidden={i !== active}
                   className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[900ms] ease-out ${
                     i === active ? 'opacity-100' : 'opacity-0'
