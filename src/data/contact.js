@@ -6,6 +6,12 @@ export const INSTAGRAM = '' // add a URL to show the link in the footer
 
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`
 
+// A plain mail link, for anywhere the address itself is shown. Hands off to
+// whatever client the visitor actually uses — Outlook, Apple Mail, Gmail,
+// Thunderbird — instead of forcing everyone through a Google login.
+export const mailTo = (subject = '') =>
+  `mailto:${EMAIL}` + (subject ? `?subject=${encodeURIComponent(subject)}` : '')
+
 // Opens Gmail's compose window addressed to Vedaa.
 export const gmailCompose = (subject = '', body = '') =>
   `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}` +

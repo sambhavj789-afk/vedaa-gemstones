@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
-import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, gmailCompose } from '../data/contact'
+import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, gmailCompose, mailTo } from '../data/contact'
 
 const field =
   'w-full border-b border-ink/25 bg-transparent py-3 font-sans text-[0.95rem] text-ink placeholder-ink/40 focus:border-ink focus:outline-none'
@@ -93,9 +93,7 @@ export default function Enquiry() {
                 {PHONE_DISPLAY}
               </a>
               <a
-                href={gmailCompose('Enquiry — Vedaa gemstones')}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={mailTo('Enquiry — Vedaa gemstones')}
                 className="link-underline block font-sans text-sm text-ink/70"
               >
                 {EMAIL}
