@@ -24,6 +24,6 @@ export const gmailCompose = (subject = '', body = '') =>
 export const whatsappEnquiry = (stone = '') =>
   `${WHATSAPP_LINK}?text=${encodeURIComponent(
     stone
-      ? `Hello Vedaa, I would like to enquire about the ${stone}.`
-      : 'Hello Vedaa, I would like to enquire about a gemstone.'
+      ? `Hi, I would like to enquire about the ${stone}.`
+      : 'Hi, I would like to enquire about a gemstone.'
   )}`

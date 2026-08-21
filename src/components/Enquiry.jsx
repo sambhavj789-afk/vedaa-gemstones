@@ -28,16 +28,14 @@ export default function Enquiry() {
       setError('Add a short message, then send.')
       return null
     }
-    // No name or email field: Gmail sends from the visitor's own account and
-    // WhatsApp from their number, so both are already on the message.
-    const lines = []
-    if (form.stone) lines.push(`Stone of interest: ${form.stone}`, '')
-    lines.push(form.message)
+    // The body is exactly what the visitor typed. Gmail sends from their own
+    // account and WhatsApp from their number, so identity is already attached,
+    // and the stone rides on the subject line instead of the body.
     return {
       subject: form.stone
         ? `Enquiry — ${form.stone}`
         : 'Enquiry — Vedaa gemstones',
-      body: lines.join('\n'),
+      body: form.message.trim(),
     }
   }
 
@@ -60,7 +58,7 @@ export default function Enquiry() {
     if (!composed) return
     window.open(
       `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-        `${composed.subject}\n\n${composed.body}`
+        composed.body
       )}`,
       '_blank',
       'noopener'
