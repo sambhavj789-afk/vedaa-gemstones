@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
-import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, gmailCompose, mailTo } from '../data/contact'
+import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, gmailCompose, mailTo, enquiryMessage } from '../data/contact'
 
 const field =
   'w-full border-b border-ink/25 bg-transparent py-3 font-sans text-[0.95rem] text-ink placeholder-ink/40 focus:border-ink focus:outline-none'
@@ -10,7 +10,6 @@ export default function Enquiry() {
   const [searchParams] = useSearchParams()
   const preselected = searchParams.get('stone') || ''
   const [form, setForm] = useState({ stone: preselected, message: '' })
-  const [error, setError] = useState('')
 
   // The pathname does not change between /contact?stone=A and ?stone=B, so the
   // component never remounts and the initial state above would go stale.
@@ -20,14 +19,9 @@ export default function Enquiry() {
 
   const update = (key) => (e) => {
     setForm((f) => ({ ...f, [key]: e.target.value }))
-    if (error) setError('')
   }
 
   const compose = () => {
-    if (!form.message.trim()) {
-      setError('Add a short message, then send.')
-      return null
-    }
     // The body is exactly what the visitor typed. Gmail sends from their own
     // account and WhatsApp from their number, so identity is already attached,
     // and the stone rides on the subject line instead of the body.
@@ -35,19 +29,19 @@ export default function Enquiry() {
       subject: form.stone
         ? `Enquiry — ${form.stone}`
         : 'Enquiry — Vedaa gemstones',
-      body: form.message.trim(),
+      // Nothing typed: fall back to the same line the catalogue links use, so
+      // picking a stone and sending straight away still reads as a sentence.
+      body: form.message.trim() || enquiryMessage(form.stone),
     }
   }
 
   const sendEmail = () => {
     const composed = compose()
-    if (!composed) return
     window.open(gmailCompose(composed.subject, composed.body), '_blank', 'noopener')
   }
 
   const sendMailto = () => {
     const composed = compose()
-    if (!composed) return
     window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(
       composed.subject
     )}&body=${encodeURIComponent(composed.body)}`
@@ -55,7 +49,6 @@ export default function Enquiry() {
 
   const sendWhatsApp = () => {
     const composed = compose()
-    if (!composed) return
     window.open(
       `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
         composed.body
@@ -139,12 +132,6 @@ export default function Enquiry() {
                   placeholder="Carat range, colour, certification, timeline"
                 />
               </div>
-
-              {error && (
-                <p role="alert" className="font-sans text-sm text-[#8a3324]">
-                  {error}
-                </p>
-              )}
 
               <div className="pt-2">
                 <div className="flex flex-wrap gap-4">

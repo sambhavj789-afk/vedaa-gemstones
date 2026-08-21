@@ -21,9 +21,10 @@ export const gmailCompose = (subject = '', body = '') =>
 // Opens WhatsApp with the stone already named. Used by the Enquire links in
 // the catalogue and on a stone page, where tapping has already said which
 // stone — sending them to a form to re-state it only loses people.
+export const enquiryMessage = (stone = '') =>
+  stone
+    ? `Hi, I would like to enquire about the ${stone}.`
+    : 'Hi, I would like to enquire about a gemstone.'
+
 export const whatsappEnquiry = (stone = '') =>
-  `${WHATSAPP_LINK}?text=${encodeURIComponent(
-    stone
-      ? `Hi, I would like to enquire about the ${stone}.`
-      : 'Hi, I would like to enquire about a gemstone.'
-  )}`
+  `${WHATSAPP_LINK}?text=${encodeURIComponent(enquiryMessage(stone))}`
