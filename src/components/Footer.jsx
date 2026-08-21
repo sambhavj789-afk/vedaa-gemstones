@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="bg-ink">
       <div className="mx-auto max-w-shell px-6 py-14 md:px-10">
         <div className="rule" />
-        <div className="flex flex-col gap-10 pt-10 md:flex-row md:items-end md:justify-between">
+        <div className="flex flex-col gap-10 pt-10 md:flex-row md:items-start md:justify-between">
           <div>
             <p className="font-brand font-bold text-2xl tracking-[0.25em] text-porcelain">
               VEDAA
@@ -38,7 +38,7 @@ export default function Footer() {
 
           <div>
             <p className="eyebrow">Contact</p>
-            <div className="mt-4 flex flex-wrap gap-x-10 gap-y-3 font-sans text-sm font-normal text-porcelain/75">
+            <div className="mt-4 flex flex-col gap-2 font-sans text-sm font-normal text-porcelain/75">
               <span>{EMAIL}</span>
               <span>{PHONE_DISPLAY}</span>
               {INSTAGRAM && (
