@@ -8,9 +8,9 @@ export default function CollectionPage() {
           <div className="reveal max-w-2xl">
             <p className="eyebrow">The collection</p>
             <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-6xl">
-              Thirteen stones,
+              Chosen one at a time,
               <br />
-              each taken at its source.
+              at the source.
             </h1>
             <p className="mt-8 max-w-lg text-[0.95rem] leading-relaxed text-porcelain/60">
               What follows is a glimpse. Origin decides more about a gemstone
