@@ -39,9 +39,9 @@ export default function Footer() {
             </ul>
           </nav>
 
-          <div>
+          <div className="md:text-right">
             <p className="eyebrow">Contact</p>
-            <div className="mt-4 flex flex-col gap-2 font-sans text-sm font-normal text-porcelain/75">
+            <div className="mt-4 flex flex-col gap-2 font-sans text-sm font-normal text-porcelain/75 md:items-end">
               <span>{EMAIL}</span>
               <span>{PHONE_DISPLAY}</span>
               {INSTAGRAM && (
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="mt-12 font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain/30">
+        <p className="mt-12 font-sans text-xs uppercase tracking-widest2 text-porcelain/45">
           © {new Date().getFullYear()} Vedaa Gems
         </p>
       </div>
