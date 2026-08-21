@@ -21,10 +21,17 @@ export const gmailCompose = (subject = '', body = '') =>
 // Opens WhatsApp with the stone already named. Used by the Enquire links in
 // the catalogue and on a stone page, where tapping has already said which
 // stone — sending them to a form to re-state it only loses people.
-export const enquiryMessage = (stone = '') =>
-  stone
-    ? `Hi, I would like to enquire about the ${stone}.`
-    : 'Hi, I would like to enquire about a gemstone.'
+// The dropdown's catch-all. Kept here so the option value and the sentence
+// that handles it cannot drift apart.
+export const OTHER_STONE = 'Something not listed'
+
+export const enquiryMessage = (stone = '') => {
+  if (!stone) return 'Hi, I would like to enquire about a gemstone.'
+  // "...about the Something not listed." would not be a sentence.
+  if (stone === OTHER_STONE)
+    return 'Hi, I am looking for a stone that is not listed on your site.'
+  return `Hi, I would like to enquire about the ${stone}.`
+}
 
 export const whatsappEnquiry = (stone = '') =>
   `${WHATSAPP_LINK}?text=${encodeURIComponent(enquiryMessage(stone))}`

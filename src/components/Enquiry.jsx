@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
-import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, gmailCompose, mailTo, enquiryMessage } from '../data/contact'
+import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, gmailCompose, mailTo, enquiryMessage, OTHER_STONE } from '../data/contact'
 
 const field =
   'w-full border-b border-ink/25 bg-transparent py-3 font-sans text-[0.95rem] text-ink placeholder-ink/40 focus:border-ink focus:outline-none'
@@ -113,9 +113,7 @@ export default function Enquiry() {
                       {stone.name}
                     </option>
                   ))}
-                  <option value="Something not listed">
-                    Something not listed
-                  </option>
+                  <option value={OTHER_STONE}>{OTHER_STONE}</option>
                 </select>
               </div>
 
