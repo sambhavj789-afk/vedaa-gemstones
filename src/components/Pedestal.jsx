@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
+import { whatsappEnquiry } from '../data/contact'
 
 function Origins({ list, className = '' }) {
   return (
@@ -113,12 +114,14 @@ export default function Pedestal({ stones = gemstones }) {
                   >
                     View stone
                   </Link>
-                  <Link
-                    to={`/contact?stone=${encodeURIComponent(stone.name)}`}
+                  <a
+                    href={whatsappEnquiry(stone.name)}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="link-underline font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain/70 hover:text-porcelain"
                   >
                     Enquire
-                  </Link>
+                  </a>
                 </div>
               </div>
             </article>

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
+import { whatsappEnquiry } from '../data/contact'
 
 export default function StonePage() {
   const { slug } = useParams()
@@ -107,12 +108,14 @@ export default function StonePage() {
             </p>
 
             <div className="mt-10">
-              <Link
-                to={`/contact?stone=${encodeURIComponent(stone.name)}`}
+              <a
+                href={whatsappEnquiry(stone.name)}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border border-brass px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
               >
                 Enquire about this stone
-              </Link>
+              </a>
             </div>
 
             <p className="mt-12 max-w-md border-t border-porcelain/10 pt-6 font-sans text-[0.72rem] leading-relaxed tracking-wide text-porcelain/45">
