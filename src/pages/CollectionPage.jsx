@@ -1,4 +1,5 @@
 import Pedestal from '../components/Pedestal'
+import { gemstones } from '../data/gemstones'
 
 export default function CollectionPage() {
   return (
@@ -16,11 +17,24 @@ export default function CollectionPage() {
                 at the source.
               </h1>
             </div>
-            <p className="text-[0.95rem] leading-relaxed text-porcelain/60 lg:col-span-5">
-              What follows is a glimpse. Origin decides more about a gemstone
-              than any other single factor, so we list it first, before colour,
-              before carat, before price.
-            </p>
+            {/* The rule gives the standfirst something to hang from. Bare, it
+                read as text stranded in the middle of the page. */}
+            <div className="border-t border-porcelain/15 pt-6 lg:col-span-5">
+              <p className="text-[0.95rem] leading-relaxed text-porcelain/70">
+                What follows is a glimpse. Origin decides more about a gemstone
+                than any other single factor, so we list it first, before
+                colour, before carat, before price.
+              </p>
+              <p className="eyebrow mt-6">
+                {gemstones.length} stones
+                <span className="mx-2 text-brass/50">·</span>
+                GIA
+                <span className="mx-2 text-brass/50">·</span>
+                IGI
+                <span className="mx-2 text-brass/50">·</span>
+                SSEF certified
+              </p>
+            </div>
           </div>
         </div>
       </section>
