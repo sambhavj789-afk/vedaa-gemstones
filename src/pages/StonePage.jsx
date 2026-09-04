@@ -103,7 +103,7 @@ export default function StonePage() {
             <p className="mt-8 max-w-md text-[0.95rem] leading-relaxed text-porcelain/70">
               {stone.description}
             </p>
-            <p className="mt-6 font-display text-lg italic text-gilt/80">
+            <p className="mt-6 font-sans text-xl font-light leading-snug text-gilt/85">
               {stone.note}
             </p>
 
