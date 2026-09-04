@@ -31,7 +31,7 @@ export default function Standard() {
               the open, so what you buy holds its value and its integrity. From
               acquisition to final setting, the work is ours.
             </p>
-            <p className="mt-6 font-sans text-xl font-light leading-snug text-gilt/85">
+            <p className="mt-6 font-display text-lg text-porcelain/55">
               Serving clients across 18 countries.
             </p>
           </div>
