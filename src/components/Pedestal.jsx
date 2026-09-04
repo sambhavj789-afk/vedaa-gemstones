@@ -74,7 +74,7 @@ export default function Pedestal({ stones = gemstones }) {
               key={stone.slug}
               data-index={i}
               ref={(node) => (blockRefs.current[i] = node)}
-              className="flex flex-col justify-center border-b border-porcelain/10 py-14 last:border-b-0 lg:min-h-[60vh] lg:border-b-0 lg:py-12"
+              className="flex flex-col justify-center border-b border-porcelain/10 py-16 last:border-b-0 lg:min-h-[80vh] lg:border-b-0 lg:py-20"
             >
               {/* Mobile keeps the same photograph inline. */}
               <div className="dissolve relative mb-8 h-[52vh] w-full lg:hidden">
