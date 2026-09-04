@@ -12,6 +12,11 @@ export default function CollectionPage() {
               <br />
               at the source.
             </h1>
+            <p className="mt-8 max-w-lg text-[0.95rem] leading-relaxed text-porcelain/70">
+              What follows is a glimpse. Origin decides more about a gemstone
+              than any other single factor, so we list it first, before colour,
+              before carat, before price.
+            </p>
           </div>
         </div>
       </section>
