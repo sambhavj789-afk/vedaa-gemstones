@@ -1,5 +1,4 @@
 import Pedestal from '../components/Pedestal'
-import { gemstones } from '../data/gemstones'
 
 export default function CollectionPage() {
   return (
@@ -25,14 +24,8 @@ export default function CollectionPage() {
                 than any other single factor, so we list it first, before
                 colour, before carat, before price.
               </p>
-              <p className="eyebrow mt-6">
-                {gemstones.length} stones
-                <span className="mx-2 text-brass/50">·</span>
-                GIA
-                <span className="mx-2 text-brass/50">·</span>
-                IGI
-                <span className="mx-2 text-brass/50">·</span>
-                SSEF certified
+              <p className="eyebrow mt-6 text-porcelain/40">
+                GIA · IGI · SSEF certified
               </p>
             </div>
           </div>
