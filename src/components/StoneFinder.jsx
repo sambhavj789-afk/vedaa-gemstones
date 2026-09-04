@@ -13,13 +13,13 @@ function brighten(hex, amount = 0.55) {
 }
 
 const planets = [
-  { label: 'Sun', slug: 'ruby', line: 'Worn for the Sun — vitality, authority, and the strength to lead.' },
-  { label: 'Moon', slug: 'pearl', line: 'Worn for the Moon — calm, clarity of mind, and emotional balance.' },
-  { label: 'Mars', slug: 'white-coral', line: 'Worn for Mars — courage, energy, and protection.' },
-  { label: 'Mercury', slug: 'emerald', line: 'Worn for Mercury — intellect, speech, and sound judgement.' },
-  { label: 'Jupiter', slug: 'yellow-sapphire', line: 'Worn for Jupiter — wisdom, prosperity, and good fortune.' },
-  { label: 'Venus', slug: 'black-opal', line: 'Worn for Venus — love, beauty, and refinement.' },
-  { label: 'Saturn', slug: 'blue-sapphire', line: 'Worn for Saturn — discipline, focus, and steady progress.' },
+  { label: 'Sun', slug: 'ruby', line: 'Worn for the Sun: vitality, authority, and the strength to lead.' },
+  { label: 'Moon', slug: 'pearl', line: 'Worn for the Moon: calm, clarity of mind, and emotional balance.' },
+  { label: 'Mars', slug: 'white-coral', line: 'Worn for Mars: courage, energy, and protection.' },
+  { label: 'Mercury', slug: 'emerald', line: 'Worn for Mercury: intellect, speech, and sound judgement.' },
+  { label: 'Jupiter', slug: 'yellow-sapphire', line: 'Worn for Jupiter: wisdom, prosperity, and good fortune.' },
+  { label: 'Venus', slug: 'black-opal', line: 'Worn for Venus: love, beauty, and refinement.' },
+  { label: 'Saturn', slug: 'blue-sapphire', line: 'Worn for Saturn: discipline, focus, and steady progress.' },
 ]
 
 export default function StoneFinder() {
@@ -40,8 +40,8 @@ export default function StoneFinder() {
               Which stone is yours?
             </h2>
             <p className="mt-6 max-w-md font-sans text-sm leading-relaxed text-porcelain/55">
-              The seven classical planets of the old sky — the seven lights
-              the ancients could see — each carry a stone. Choose yours.
+              The seven classical planets of the old sky, the seven lights
+              the ancients could see, each carry a stone. Choose yours.
             </p>
           </div>
           <Link

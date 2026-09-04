@@ -56,7 +56,7 @@ export default function StonePage() {
                 alt={`${stone.name} on the Vedaa stand`}
                 className="h-full w-full object-cover"
               />
-              {/* The loupe — examine the stone the way a dealer would */}
+              {/* The loupe. Examine the stone the way a dealer would */}
               {fine && loupe && (
                 <div
                   aria-hidden="true"

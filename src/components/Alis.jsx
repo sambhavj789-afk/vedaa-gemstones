@@ -14,7 +14,7 @@ export default function Alis() {
             </h2>
             <p className="mt-8 max-w-md text-[0.95rem] leading-relaxed text-porcelain/65">
               Beyond what is published, we hold a far more extensive collection of
-              rare and exceptional stones — much of it reserved for our private
+              rare and exceptional stones, much of it reserved for our private
               circle, Alis by Vedaa. Every stone is certified by IGI, GIA or SSEF.
             </p>
             <Link

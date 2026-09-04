@@ -5,7 +5,7 @@ export default function Hero() {
     <section id="top" className="relative min-h-[100svh] overflow-hidden">
       <img
         src="/images/hero.webp"
-        alt="A tray of loose natural gemstones — emerald, ruby, sapphire, opal and pearl"
+        alt="A tray of loose natural gemstones: emerald, ruby, sapphire, opal and pearl"
         className="hero-zoom absolute inset-0 h-full w-full object-cover"
         fetchPriority="high"
       />

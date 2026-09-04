@@ -35,8 +35,8 @@ export default function Enquiry() {
     // and the stone rides on the subject line instead of the body.
     return {
       subject: form.stone
-        ? `Enquiry — ${form.stone}`
-        : 'Enquiry — Vedaa gemstones',
+        ? `Enquiry: ${form.stone}`
+        : 'Enquiry: Vedaa gemstones',
       // Nothing typed: fall back to the same line the catalogue links use, so
       // picking a stone and sending straight away still reads as a sentence.
       body: (named ? '' : form.message.trim()) || enquiryMessage(form.stone),
@@ -92,7 +92,7 @@ export default function Enquiry() {
                 {PHONE_DISPLAY}
               </a>
               <a
-                href={mailTo('Enquiry — Vedaa gemstones')}
+                href={mailTo('Enquiry: Vedaa gemstones')}
                 className="link-underline block font-sans text-sm text-porcelain/70"
               >
                 {EMAIL}

@@ -1,5 +1,5 @@
 // All copy below is from the Vedaa catalogue, lightly tightened.
-// The Amethyst entry is new — it has no page in the catalogue. Review its wording.
+// The Amethyst entry is new: it has no page in the catalogue. Review its wording.
 
 export const gemstones = [
   {
@@ -12,7 +12,7 @@ export const gemstones = [
     origins: ['Colombia', 'Zambia', 'Brazil'],
     note: 'Depth of colour over everything else.',
     description:
-      'We source exceptional natural emeralds from Colombia, Zambia and Brazil — the regions that produce the world’s finest green gemstones. Each stone is selected for depth of colour, natural integrity and lasting value.',
+      'We source exceptional natural emeralds from Colombia, Zambia and Brazil, the regions that produce the world’s finest green gemstones. Each stone is selected for depth of colour, natural integrity and lasting value.',
   },
   {
     slug: 'ruby',
@@ -65,7 +65,7 @@ export const gemstones = [
   {
     slug: 'pearl',
     name: 'Pearl',
-    species: 'Organic — nacre',
+    species: 'Organic nacre',
     image: '/images/pearl.webp',
     macro: '/images/macro/pearl.webp',
     accent: '#C9C0B0',
@@ -77,7 +77,7 @@ export const gemstones = [
   {
     slug: 'tahitian-pearl',
     name: 'Tahitian Pearl',
-    species: 'Organic — nacre',
+    species: 'Organic nacre',
     image: '/images/tahitian-pearl.webp',
     macro: '/images/macro/tahitian-pearl.webp',
     accent: '#7A6B72',
@@ -106,7 +106,7 @@ export const gemstones = [
     macro: '/images/macro/aquamarine.webp',
     accent: '#57B4D6',
     origins: ['Brazil', 'Madagascar'],
-    note: 'Clarity first — the colour follows.',
+    note: 'Clarity first. The colour follows.',
     description:
       'Aquamarine, as a symbol of serene luxury: pure, luminous and timeless. Formed deep within the earth over millions of years, the finest stones come from Brazil and Madagascar, known for exceptional clarity and a tranquil blue hue.',
   },

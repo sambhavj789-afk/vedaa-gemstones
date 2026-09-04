@@ -7,8 +7,8 @@ export const INSTAGRAM = '' // add a URL to show the link in the footer
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`
 
 // A plain mail link, for anywhere the address itself is shown. Hands off to
-// whatever client the visitor actually uses — Outlook, Apple Mail, Gmail,
-// Thunderbird — instead of forcing everyone through a Google login.
+// whatever client the visitor actually uses (Outlook, Apple Mail, Gmail,
+// Thunderbird) instead of forcing everyone through a Google login.
 export const mailTo = (subject = '') =>
   `mailto:${EMAIL}` + (subject ? `?subject=${encodeURIComponent(subject)}` : '')
 
@@ -20,7 +20,7 @@ export const gmailCompose = (subject = '', body = '') =>
 
 // Opens WhatsApp with the stone already named. Used by the Enquire links in
 // the catalogue and on a stone page, where tapping has already said which
-// stone — sending them to a form to re-state it only loses people.
+// stone. Sending them to a form to re-state it only loses people.
 // The dropdown's catch-all. Kept here so the option value and the sentence
 // that handles it cannot drift apart.
 export const OTHER_STONE = 'Something not listed'

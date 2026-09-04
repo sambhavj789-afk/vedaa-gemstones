@@ -29,7 +29,7 @@ export default function Header() {
   }, [])
 
   // Safety net for the browser back/forward gesture. Tapping a menu link closes
-  // the menu in its own click handler, so that path no longer relies on this —
+  // the menu in its own click handler, so that path no longer relies on this,
   // which matters because tapping the page you are already on leaves the
   // pathname unchanged and this effect would never re-run.
   useEffect(close, [pathname])
@@ -44,7 +44,7 @@ export default function Header() {
   }, [open])
 
   // Layout effect so the scroll lock lifts in the same commit that closes the
-  // menu, before App's scroll-to-top effect runs — otherwise the new page opens
+  // menu, before App's scroll-to-top effect runs. Otherwise the new page opens
   // frozen at the old scroll offset.
   useLayoutEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''

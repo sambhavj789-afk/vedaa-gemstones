@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
-import { whatsappEnquiry } from '../data/contact'
 
 function Origins({ list, className = '' }) {
   return (
@@ -41,7 +40,7 @@ export default function Pedestal({ stones = gemstones }) {
   return (
     <section className="relative bg-ink">
       <div className="mx-auto max-w-shell px-6 md:px-10 lg:grid lg:grid-cols-2 lg:gap-16">
-        {/* The pedestal — every stone is photographed on the same stand, so
+        {/* The pedestal. Every stone is photographed on the same stand, so
             crossfading them reads as one stone being replaced by the next. */}
         <div className="hidden lg:block">
           <div className="sticky top-0 flex h-screen items-center">
@@ -107,21 +106,16 @@ export default function Pedestal({ stones = gemstones }) {
                   {stone.note}
                 </p>
 
-                <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
+                {/* One action only. An Enquire link here let people write in
+                    without ever seeing the stone's own page, so the enquiry
+                    arrived from someone who had read three lines about it. */}
+                <div className="mt-8">
                   <Link
                     to={`/collection/${stone.slug}`}
                     className="link-underline font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
                   >
-                    View stone
+                    View {stone.name}
                   </Link>
-                  <a
-                    href={whatsappEnquiry(stone.name)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-underline font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain/70 hover:text-porcelain"
-                  >
-                    Enquire
-                  </a>
                 </div>
               </div>
             </article>
