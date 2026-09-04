@@ -15,7 +15,7 @@ const pillars = [
 
 export default function Standard() {
   return (
-    <section className="bg-linen text-ink">
+    <section className="bg-ink text-porcelain">
       <div className="mx-auto max-w-shell px-6 py-24 md:px-10 md:py-32">
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
           <div className="reveal lg:col-span-5">
@@ -25,13 +25,13 @@ export default function Standard() {
               <br />
               chosen well.
             </h2>
-            <p className="mt-8 max-w-md text-[0.95rem] leading-relaxed text-ink/75">
+            <p className="mt-8 max-w-md text-[0.95rem] leading-relaxed text-porcelain/70">
               Clients trust Vedaa because we pair a global sourcing network with
               standards we do not bend. Every stone is inspected and evaluated in
               the open, so what you buy holds its value and its integrity. From
               acquisition to final setting, the work is ours.
             </p>
-            <p className="mt-6 font-display text-lg text-ink/60">
+            <p className="mt-6 font-display text-lg italic text-gilt/80">
               Serving clients across 18 countries.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function Standard() {
           </div>
         </div>
 
-        <div className="mt-20 h-px w-full bg-ink/15 md:mt-28" />
+        <div className="rule mt-20 md:mt-28" />
 
         <div className="grid gap-12 pt-14 md:grid-cols-3 md:gap-10">
           {pillars.map((pillar, i) => (
@@ -56,7 +56,7 @@ export default function Standard() {
               style={{ transitionDelay: `${i * 140}ms` }}
             >
               <h3 className="font-display text-2xl">{pillar.title}</h3>
-              <p className="mt-4 max-w-xs text-[0.9rem] leading-relaxed text-ink/70">
+              <p className="mt-4 max-w-xs text-[0.9rem] leading-relaxed text-porcelain/65">
                 {pillar.body}
               </p>
             </div>

@@ -23,7 +23,7 @@ export default function Home() {
     <>
       <Hero />
 
-      <section className="bg-linen text-ink">
+      <section className="bg-basalt text-porcelain">
         <div className="mx-auto max-w-shell px-6 py-20 md:px-10 md:py-24">
           <div className="grid gap-12 md:grid-cols-3 md:gap-10">
             {pillars.map((pillar, i) => (
@@ -33,7 +33,7 @@ export default function Home() {
                 style={{ transitionDelay: `${i * 140}ms` }}
               >
                 <h2 className="font-display text-2xl">{pillar.title}</h2>
-                <p className="mt-4 max-w-xs text-[0.9rem] leading-relaxed text-ink/70">
+                <p className="mt-4 max-w-xs text-[0.9rem] leading-relaxed text-porcelain/65">
                   {pillar.body}
                 </p>
               </div>
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
           <Link
             to="/about"
-            className="link-underline mt-14 inline-block font-sans text-[0.66rem] uppercase tracking-widest2 text-ink/70"
+            className="link-underline mt-14 inline-block font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
           >
             More about Vedaa
           </Link>
