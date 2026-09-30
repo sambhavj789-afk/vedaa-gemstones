@@ -10,7 +10,7 @@ export const gemstones = [
     macro: '/images/macro/emerald.webp',
     accent: '#1E7A4F',
     origins: ['Colombia', 'Zambia', 'Brazil'],
-    note: 'Ruled by Mercury. Depth of colour over everything else.',
+    note: 'Depth of colour over everything else. Mercury’s stone.',
     description:
       'We source exceptional natural emeralds from Colombia, Zambia and Brazil, the regions that produce the world’s finest green gemstones. Each stone is selected for depth of colour, natural integrity and lasting value.',
   },
@@ -22,7 +22,7 @@ export const gemstones = [
     macro: '/images/macro/ruby.webp',
     accent: '#A31626',
     origins: ['Myanmar', 'Mozambique', 'Sri Lanka'],
-    note: 'Ruled by the Sun. Vivid red, unheated wherever possible.',
+    note: 'The Sun’s stone: vivid red, unheated wherever possible.',
     description:
       'Premium rubies from Myanmar, Mozambique and Sri Lanka, renowned for exceptional colour and brilliance. Every stone is chosen for its vivid red hue, natural authenticity and lasting value.',
   },
@@ -34,7 +34,7 @@ export const gemstones = [
     macro: '/images/macro/blue-sapphire.webp',
     accent: '#2946C4',
     origins: ['Sri Lanka', 'Kashmir', 'Madagascar'],
-    note: 'Ruled by Saturn. Ethically mined, single-origin where stated.',
+    note: 'Ethically mined, single-origin where stated, and worn for Saturn.',
     description:
       'Our natural blue sapphires are ethically mined from renowned origins including Sri Lanka, Kashmir and Madagascar. Each is selected for its rich blue tone and exceptional quality.',
   },
@@ -46,7 +46,7 @@ export const gemstones = [
     macro: '/images/macro/yellow-sapphire.webp',
     accent: '#D9A521',
     origins: ['Sri Lanka', 'Madagascar', 'Tanzania'],
-    note: 'Ruled by Jupiter. Prized for saturation and clarity together.',
+    note: 'Jupiter’s stone, prized for saturation and clarity together.',
     description:
       'Natural yellow sapphires from top origins including Sri Lanka, Madagascar and Tanzania, prized for rich colour and clarity. Each stone is ethically sourced and chosen to reflect timeless elegance.',
   },
@@ -70,7 +70,7 @@ export const gemstones = [
     macro: '/images/macro/pearl.webp',
     accent: '#C9C0B0',
     origins: ['Japan', 'South Sea'],
-    note: 'Ruled by the Moon. Selected on lustre before size.',
+    note: 'Selected on lustre before size, and carried for the Moon.',
     description:
       'Our pearls come from the finest waters of Japan and the South Sea, selected for natural lustre and a smooth finish. Timeless in appeal, each pearl reflects understated elegance.',
   },
@@ -106,7 +106,7 @@ export const gemstones = [
     macro: '/images/macro/black-opal.webp',
     accent: '#2F8078',
     origins: ['Australia'],
-    note: 'Ruled by Venus. The rarest body tone in opal.',
+    note: 'Venus, in the rarest body tone opal takes.',
     description:
       'Our black opals are sourced from Australia, home to the world’s finest and rarest deposits. Formed over millions of years within ironstone, their naturally dark body highlights the vivid flashes of colour that make each stone extraordinary.',
   },
@@ -118,7 +118,7 @@ export const gemstones = [
     macro: '/images/macro/white-coral.webp',
     accent: '#D8CFC0',
     origins: ['Mediterranean Sea', 'Italy'],
-    note: 'Ruled by Mars. Slow-grown, dense, and worked by hand.',
+    note: 'Worn for Mars: slow-grown, dense, and worked by hand.',
     description:
       'White coral is valued for its smooth texture and soft, natural lustre. The finest originates in the Mediterranean, particularly along the coasts of Italy, where slow-growing coral forms the dense structure prized in fine jewellery.',
   },
