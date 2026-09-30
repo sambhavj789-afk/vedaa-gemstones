@@ -31,15 +31,12 @@ export default function Standard() {
               the open, so what you buy holds its value and its integrity. From
               acquisition to final setting, the work is ours.
             </p>
-            <p className="mt-6 font-display text-lg text-porcelain/55">
-              Serving clients across 18 countries.
-            </p>
           </div>
 
           <div className="reveal lg:col-span-7">
             <img
               src="/images/atelier.webp"
-              alt="A loupe and tweezers on a workbench, examining loose stones"
+              alt="A loupe and tweezers on a workbench, examining a gemstone"
               loading="lazy"
               className="aspect-[3/2] w-full object-cover"
             />

@@ -5,7 +5,7 @@ export default function Hero() {
     <section id="top" className="relative min-h-[100svh] overflow-hidden">
       <img
         src="/images/hero.webp"
-        alt="A tray of loose natural gemstones: emerald, ruby, sapphire, opal and pearl"
+        alt="Natural emerald, ruby, sapphire, opal and pearl on a jeweller’s tray"
         className="hero-zoom absolute inset-0 h-full w-full object-cover"
         fetchPriority="high"
       />
@@ -22,7 +22,7 @@ export default function Hero() {
             Natural gemstones of uncompromising purity, curated for legacy.
           </p>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-porcelain/65">
-            Loose stones sourced at origin, inspected without exception, and
+            Every stone sourced at origin, inspected without exception, and
             guaranteed natural for life.
           </p>
         </div>

@@ -12,15 +12,6 @@ export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`
 export const mailTo = (subject = '') =>
   `mailto:${EMAIL}` + (subject ? `?subject=${encodeURIComponent(subject)}` : '')
 
-// Opens Gmail's compose window addressed to Vedaa.
-export const gmailCompose = (subject = '', body = '') =>
-  `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}` +
-  (subject ? `&su=${encodeURIComponent(subject)}` : '') +
-  (body ? `&body=${encodeURIComponent(body)}` : '')
-
-// Opens WhatsApp with the stone already named. Used by the Enquire links in
-// the catalogue and on a stone page, where tapping has already said which
-// stone. Sending them to a form to re-state it only loses people.
 // The dropdown's catch-all. Kept here so the option value and the sentence
 // that handles it cannot drift apart.
 export const OTHER_STONE = 'Something not listed'
@@ -33,5 +24,3 @@ export const enquiryMessage = (stone = '') => {
   return `Hi, I would like to enquire about the ${stone}.`
 }
 
-export const whatsappEnquiry = (stone = '') =>
-  `${WHATSAPP_LINK}?text=${encodeURIComponent(enquiryMessage(stone))}`

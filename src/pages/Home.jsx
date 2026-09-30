@@ -39,9 +39,12 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <p className="reveal mt-16 font-display text-lg text-porcelain/55">
+            Serving clients across 18 countries.
+          </p>
           <Link
             to="/about"
-            className="link-underline mt-14 inline-block font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
+            className="link-underline mt-8 inline-block font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
           >
             More about Vedaa
           </Link>

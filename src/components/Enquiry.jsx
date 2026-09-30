@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
-import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, gmailCompose, mailTo, enquiryMessage, OTHER_STONE } from '../data/contact'
+import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, mailTo, enquiryMessage, OTHER_STONE } from '../data/contact'
 
 const field =
   'w-full border-b border-porcelain/20 bg-transparent py-3 font-sans text-[0.95rem] text-porcelain placeholder-porcelain/35 focus:border-gilt focus:outline-none'
@@ -30,9 +30,9 @@ export default function Enquiry() {
   const named = form.stone && form.stone !== OTHER_STONE
 
   const compose = () => {
-    // The body is exactly what the visitor typed. Gmail sends from their own
-    // account and WhatsApp from their number, so identity is already attached,
-    // and the stone rides on the subject line instead of the body.
+    // The body is exactly what the visitor typed. The mail client sends from
+    // their own account and WhatsApp from their number, so identity is already
+    // attached, and the stone rides on the subject line instead of the body.
     return {
       subject: form.stone
         ? `Enquiry: ${form.stone}`
@@ -45,11 +45,8 @@ export default function Enquiry() {
 
   const sendEmail = () => {
     const composed = compose()
-    window.open(gmailCompose(composed.subject, composed.body), '_blank', 'noopener')
-  }
-
-  const sendMailto = () => {
-    const composed = compose()
+    // A plain mailto: hands off to whatever client the visitor already uses.
+    // Routing through Gmail assumed a Google account everyone does not have.
     window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(
       composed.subject
     )}&body=${encodeURIComponent(composed.body)}`
@@ -162,13 +159,6 @@ export default function Enquiry() {
                     Send email
                   </button>
                 </div>
-                <button
-                  type="button"
-                  onClick={sendMailto}
-                  className="link-underline mt-5 font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain/45"
-                >
-                  Not a Gmail user? Use your own mail app
-                </button>
               </div>
             </div>
           </div>
