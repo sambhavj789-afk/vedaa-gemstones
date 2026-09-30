@@ -38,7 +38,7 @@
 @layer components {
   /* Small letterspaced caps, used for eyebrows, nav, labels */
   .eyebrow {
-    @apply font-sans text-[0.75rem] uppercase tracking-widest2 text-brass;
+    @apply font-sans text-base font-normal uppercase tracking-[0.18em] text-brass;
   }
 
   .rule {

@@ -4,7 +4,7 @@ import { gemstones } from '../data/gemstones'
 
 function Origins({ list, className = '' }) {
   return (
-    <p className={`eyebrow ${className}`}>
+    <p className={`eyebrow flex flex-wrap ${className}`}>
       {list.map((origin, i) => (
         <span key={origin}>
           {i > 0 && <span className="mx-2 text-brass/50">·</span>}

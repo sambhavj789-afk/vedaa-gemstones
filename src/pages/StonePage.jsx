@@ -79,7 +79,7 @@ export default function StonePage() {
           </div>
 
           <div className="reveal relative py-14 lg:py-24">
-            <p className="eyebrow">
+            <p className="eyebrow flex flex-wrap">
               {stone.origins.map((origin, i) => (
                 <span key={origin}>
                   {i > 0 && <span className="mx-2 text-brass/50">·</span>}
