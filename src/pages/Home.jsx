@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import Alis from '../components/Alis'
 import StoneFinder from '../components/StoneFinder'
-import ColumnsTeaser from '../components/ColumnsTeaser'
 
 const pillars = [
   {
@@ -55,8 +54,6 @@ export default function Home() {
       <StoneFinder />
 
       <Alis />
-
-      <ColumnsTeaser />
     </>
   )
 }
