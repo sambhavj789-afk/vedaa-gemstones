@@ -35,12 +35,10 @@ export default function Standard() {
 
           <div className="reveal lg:col-span-7">
             <img
-              src="/images/macro/aquamarine.webp"
-              alt="An aquamarine on the Vedaa stand, photographed close"
+              src="/images/atelier.webp"
+              alt="A loupe and tweezers on a workbench, examining a gemstone"
               loading="lazy"
-              width="700"
-              height="700"
-              className="aspect-[4/3] w-full object-cover"
+              className="aspect-[3/2] w-full object-cover"
             />
           </div>
         </div>

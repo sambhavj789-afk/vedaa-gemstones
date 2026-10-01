@@ -39,26 +39,23 @@ export default function Pedestal({ stones = gemstones }) {
 
   return (
     <section className="relative bg-ink">
-      <div className="mx-auto max-w-shell px-6 md:px-10 lg:grid lg:grid-cols-12 lg:gap-16">
-        {/* The pedestal. Every stone is shot on the same brass stand at the
-            same distance, so crossfading the macro crops reads as one stone
-            being lifted away and the next set down in its place. */}
-        <div className="hidden lg:col-span-7 lg:block">
+      <div className="mx-auto max-w-shell px-6 md:px-10 lg:grid lg:grid-cols-2 lg:gap-16">
+        {/* The pedestal. Every stone is photographed on the same stand, so
+            crossfading them reads as one stone being replaced by the next. */}
+        <div className="hidden lg:block">
           <div className="sticky top-0 flex h-screen items-center">
             <div
               aria-hidden="true"
-              className="aura-pulse absolute inset-y-28 inset-x-0 blur-3xl transition-colors duration-1000"
+              className="aura-pulse absolute inset-y-16 inset-x-0 blur-3xl transition-colors duration-1000"
               style={{
                 background: `radial-gradient(closest-side, ${stones[active].accent}, transparent 70%)`,
               }}
             />
-            <div className="relative aspect-square w-full">
+            <div className="dissolve relative h-[80vh] w-full">
               {stones.map((stone, i) => (
                 <img
                   key={stone.slug}
-                  src={stone.macro}
-                  width="700"
-                  height="700"
+                  src={stone.image}
                   alt={`${stone.name} on the Vedaa stand`}
                   loading="lazy"
                   aria-hidden={i !== active}
@@ -71,7 +68,7 @@ export default function Pedestal({ stones = gemstones }) {
           </div>
         </div>
 
-        <div className="lg:col-span-5">
+        <div>
           {stones.map((stone, i) => (
             <article
               key={stone.slug}
@@ -80,13 +77,11 @@ export default function Pedestal({ stones = gemstones }) {
               className="flex flex-col justify-center border-b border-porcelain/10 py-16 last:border-b-0 lg:min-h-[80vh] lg:border-b-0 lg:py-20"
             >
               {/* Mobile keeps the same photograph inline. */}
-              <div className="relative mb-9 aspect-square w-full lg:hidden">
+              <div className="dissolve relative mb-8 h-[52vh] w-full lg:hidden">
                 <img
-                  src={stone.macro}
+                  src={stone.image}
                   alt={`${stone.name} on the Vedaa stand`}
                   loading="lazy"
-                  width="700"
-                  height="700"
                   className="h-full w-full object-cover"
                 />
               </div>
