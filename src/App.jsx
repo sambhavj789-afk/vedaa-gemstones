@@ -7,6 +7,8 @@ import CollectionPage from './pages/CollectionPage'
 import StonePage from './pages/StonePage'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import ColumnsPage from './pages/ColumnsPage'
+import ColumnPage from './pages/ColumnPage'
 import useReveal from './hooks/useReveal'
 
 export default function App() {
@@ -28,6 +30,8 @@ export default function App() {
           <Route path="/collection" element={<CollectionPage />} />
           <Route path="/collection/:slug" element={<StonePage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/columns" element={<ColumnsPage />} />
+          <Route path="/columns/:slug" element={<ColumnPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

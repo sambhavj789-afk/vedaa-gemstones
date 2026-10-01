@@ -12,6 +12,12 @@ export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`
 export const mailTo = (subject = '') =>
   `mailto:${EMAIL}` + (subject ? `?subject=${encodeURIComponent(subject)}` : '')
 
+// Alis by Vedaa is applied to, not bought, so its enquiry opens differently
+// from a stone enquiry and never touches the stone dropdown.
+export const MEMBERSHIP_SUBJECT = 'Application: Alis by Vedaa'
+export const membershipMessage = () =>
+  'Hi, I would like to apply for membership of Alis by Vedaa.'
+
 // The dropdown's catch-all. Kept here so the option value and the sentence
 // that handles it cannot drift apart.
 export const OTHER_STONE = 'Something not listed'

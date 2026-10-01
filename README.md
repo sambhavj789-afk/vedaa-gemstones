@@ -69,7 +69,7 @@ To remove one: delete its object.
 
 All photography is pulled from the catalogue PDF and sits in `public/images/`. To replace any of them, keep the same filename and use a **portrait 2:3 crop** — the sticky-stage effect depends on every stone being shot on the same stand, at the same distance.
 
-**One thing to fix:** `amethyst.jpg` is a crop from the cover photograph, since the catalogue has no amethyst page. It's soft at full size. Shoot the amethyst on the same brass stand as the others and swap the file in.
+**Note:** the site renders the `macro/` crops, not the full stand shots. The macro frames are where the stone itself is the subject; the full shots put it small against a marble dome. Replace a macro at the same filename and the stone page, the collection and the hero all follow.
 
 ## How the collection section works
 
@@ -85,8 +85,6 @@ If you later want submissions to arrive without opening a mail client, the quick
 
 ## Before launch
 
-- Replace `amethyst.jpg` with a real photograph.
 - Confirm the phone number and email in `src/data/contact.js`.
 - Add the Instagram URL in the same file if there is one.
-- Read the amethyst description in `src/data/gemstones.js` — it's new copy, not from the catalogue.
 - Add a favicon at `public/favicon.svg` and link it in `index.html`.

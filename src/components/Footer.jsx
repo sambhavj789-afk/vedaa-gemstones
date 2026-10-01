@@ -3,6 +3,7 @@ import { EMAIL, INSTAGRAM, PHONE_DISPLAY } from '../data/contact'
 
 const pages = [
   { to: '/collection', label: 'Collection' },
+  { to: '/columns', label: 'Columns' },
   { to: '/about', label: 'About' },
   { to: '/contact', label: 'Enquire' },
 ]
@@ -42,7 +43,7 @@ export default function Footer() {
           </nav>
 
           <div className="md:text-right">
-            <p className="eyebrow">Contact</p>
+            <p className="eyebrow">Contact (India)</p>
             <div className="mt-4 flex flex-col gap-2 font-sans text-sm font-normal text-porcelain/75 md:items-end">
               <span>{EMAIL}</span>
               <span>{PHONE_DISPLAY}</span>

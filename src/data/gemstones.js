@@ -1,5 +1,4 @@
 // All copy below is from the Vedaa catalogue, lightly tightened.
-// The Amethyst entry is new: it has no page in the catalogue. Review its wording.
 
 export const gemstones = [
   {
@@ -145,17 +144,5 @@ export const gemstones = [
     note: 'One deposit on earth. Nowhere else.',
     description:
       'Tanzanite is sourced exclusively from Tanzania, the only place in the world where it is found. Discovered in the foothills of Mount Kilimanjaro, it is treasured for captivating violet-blue hues and remarkable rarity.',
-  },
-  {
-    slug: 'amethyst',
-    name: 'Amethyst',
-    species: 'Quartz',
-    image: '/images/amethyst.webp',
-    macro: '/images/macro/amethyst.webp',
-    accent: '#7B5AA6',
-    origins: ['Brazil', 'Uruguay', 'Zambia'],
-    note: 'Judged on evenness of colour across the stone.',
-    description:
-      'Our amethyst is sourced from Brazil, Uruguay and Zambia, the origins that yield the deepest and most even violet. Each stone is selected for saturation that holds from centre to edge, and cut to keep that colour under every light.',
   },
 ]

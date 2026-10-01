@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
-import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, mailTo, enquiryMessage, OTHER_STONE } from '../data/contact'
+import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, mailTo, enquiryMessage, membershipMessage, MEMBERSHIP_SUBJECT, OTHER_STONE } from '../data/contact'
 
 const field =
   'w-full border-b border-porcelain/20 bg-transparent py-3 font-sans text-[0.95rem] text-porcelain placeholder-porcelain/35 focus:border-gilt focus:outline-none'
@@ -13,6 +13,8 @@ const option = 'bg-ink text-porcelain'
 export default function Enquiry() {
   const [searchParams] = useSearchParams()
   const preselected = searchParams.get('stone') || ''
+  // Arriving from the Alis membership button rather than from a stone.
+  const membership = searchParams.get('about') === 'membership'
   const [form, setForm] = useState({ stone: preselected, message: '' })
 
   // The pathname does not change between /contact?stone=A and ?stone=B, so the
@@ -34,12 +36,16 @@ export default function Enquiry() {
     // their own account and WhatsApp from their number, so identity is already
     // attached, and the stone rides on the subject line instead of the body.
     return {
-      subject: form.stone
-        ? `Enquiry: ${form.stone}`
-        : 'Enquiry: Vedaa gemstones',
+      subject: membership
+        ? MEMBERSHIP_SUBJECT
+        : form.stone
+          ? `Enquiry: ${form.stone}`
+          : 'Enquiry: Vedaa gemstones',
       // Nothing typed: fall back to the same line the catalogue links use, so
       // picking a stone and sending straight away still reads as a sentence.
-      body: (named ? '' : form.message.trim()) || enquiryMessage(form.stone),
+      body:
+        (named && !membership ? '' : form.message.trim()) ||
+        (membership ? membershipMessage() : enquiryMessage(form.stone)),
     }
   }
 
@@ -68,15 +74,26 @@ export default function Enquiry() {
       <div className="mx-auto max-w-shell px-6 py-24 md:px-10 md:py-32">
         <div className="grid gap-16 lg:grid-cols-12 lg:gap-20">
           <div className="reveal lg:col-span-5">
-            <p className="eyebrow">Enquire</p>
+            <p className="eyebrow">{membership ? 'Alis by Vedaa' : 'Enquire'}</p>
             <h2 className="mt-6 font-display text-4xl leading-tight md:text-5xl">
-              Tell us what
-              <br />
-              you are looking for.
+              {membership ? (
+                <>
+                  Apply to join
+                  <br />
+                  the private circle.
+                </>
+              ) : (
+                <>
+                  Tell us what
+                  <br />
+                  you are looking for.
+                </>
+              )}
             </h2>
             <p className="mt-8 max-w-sm text-[0.95rem] leading-relaxed text-porcelain/65">
-              Send the stone, the size and the setting you have in mind. We reply
-              with what is currently available, certification details and price.
+              {membership
+                ? 'Tell us what you collect and what you are looking for. Membership is by application, there is no fee, and we reply to every one.'
+                : 'Send the stone, the size and the setting you have in mind. We reply with what is currently available, certification details and price.'}
             </p>
 
             <div className="mt-12 space-y-3">
@@ -102,6 +119,7 @@ export default function Enquiry() {
 
           <div className="reveal lg:col-span-7">
             <div className="space-y-8">
+              {!membership && (
               <div>
                 <label htmlFor="stone" className="eyebrow">
                   Stone of interest
@@ -125,11 +143,12 @@ export default function Enquiry() {
                   </option>
                 </select>
               </div>
+              )}
 
-              {!named && (
+              {(!named || membership) && (
                 <div>
                   <label htmlFor="message" className="eyebrow">
-                    Message
+                    {membership ? 'About you' : 'Message'}
                   </label>
                   <textarea
                     id="message"
@@ -137,7 +156,11 @@ export default function Enquiry() {
                     className={`${field} mt-3 resize-none`}
                     value={form.message}
                     onChange={update('message')}
-                    placeholder="Carat range, colour, certification, timeline"
+                    placeholder={
+                      membership
+                        ? 'What you collect, and what you are looking for'
+                        : 'Carat range, colour, certification, timeline'
+                    }
                   />
                 </div>
               )}
