@@ -39,11 +39,11 @@ export default function Pedestal({ stones = gemstones }) {
 
   return (
     <section className="relative bg-ink">
-      <div className="mx-auto max-w-shell px-6 md:px-10 lg:grid lg:grid-cols-2 lg:gap-16">
+      <div className="mx-auto max-w-shell px-6 md:px-10 lg:grid lg:grid-cols-12 lg:gap-16">
         {/* The pedestal. Every stone is shot on the same brass stand at the
             same distance, so crossfading the macro crops reads as one stone
             being lifted away and the next set down in its place. */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:col-span-7 lg:block">
           <div className="sticky top-0 flex h-screen items-center">
             <div
               aria-hidden="true"
@@ -52,7 +52,7 @@ export default function Pedestal({ stones = gemstones }) {
                 background: `radial-gradient(closest-side, ${stones[active].accent}, transparent 70%)`,
               }}
             />
-            <div className="relative mx-auto aspect-square w-full max-w-[30rem]">
+            <div className="relative aspect-square w-full">
               {stones.map((stone, i) => (
                 <img
                   key={stone.slug}
@@ -71,7 +71,7 @@ export default function Pedestal({ stones = gemstones }) {
           </div>
         </div>
 
-        <div>
+        <div className="lg:col-span-5">
           {stones.map((stone, i) => (
             <article
               key={stone.slug}

@@ -14,11 +14,11 @@ export default function StonePage() {
   return (
     <>
       <section className="relative overflow-hidden bg-ink pt-28 md:pt-32">
-        <div className="mx-auto max-w-shell px-6 md:px-10 lg:grid lg:grid-cols-2 lg:items-center lg:gap-20">
+        <div className="mx-auto max-w-shell px-6 md:px-10 lg:grid lg:grid-cols-12 lg:items-center lg:gap-16">
           {/* The macro crop, not the full stand shot: it is the only frame
               where the stone itself is the subject, and at this size it is
               shown within the resolution it actually has. */}
-          <figure className="relative mx-auto w-full max-w-[32rem]">
+          <figure className="relative mx-auto w-full max-w-[44rem] lg:col-span-7">
             <div
               aria-hidden="true"
               className="aura-pulse absolute -inset-12 blur-3xl"
@@ -36,7 +36,7 @@ export default function StonePage() {
             />
           </figure>
 
-          <div className="reveal relative py-16 lg:py-24">
+          <div className="reveal relative py-16 lg:col-span-5 lg:py-24">
             <p className="eyebrow flex flex-wrap">
               {stone.origins.map((origin, i) => (
                 <span key={origin}>
