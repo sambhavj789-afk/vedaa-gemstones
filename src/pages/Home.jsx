@@ -24,8 +24,21 @@ export default function Home() {
       <Hero />
 
       <section className="bg-basalt text-porcelain">
-        <div className="mx-auto max-w-shell px-6 py-20 md:px-10 md:py-24">
-          <div className="grid gap-12 md:grid-cols-3 md:gap-10">
+        <div className="mx-auto max-w-shell px-6 py-28 md:px-10 md:py-36">
+          {/* The three used to begin with no label, which read as a feature
+              grid rather than as the standard the house keeps. */}
+          <div className="reveal max-w-2xl">
+            <p className="eyebrow">The standard</p>
+            <h3 className="mt-6 font-display text-4xl leading-tight md:text-5xl">
+              What every stone
+              <br />
+              is held to.
+            </h3>
+          </div>
+
+          <div className="rule mt-14 md:mt-20" />
+
+          <div className="grid gap-12 pt-14 md:grid-cols-3 md:gap-10 md:pt-20">
             {pillars.map((pillar, i) => (
               <div
                 key={pillar.title}
@@ -39,15 +52,20 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p className="reveal mt-16 font-display text-lg text-porcelain/55">
-            Serving clients across 18 countries.
-          </p>
-          <Link
-            to="/about"
-            className="link-underline mt-8 inline-block font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
-          >
-            More about Vedaa
-          </Link>
+
+          <div className="rule mt-16 md:mt-24" />
+
+          <div className="reveal flex flex-wrap items-baseline justify-between gap-x-10 gap-y-5 pt-9">
+            <p className="font-display text-lg text-porcelain/55">
+              Serving clients across 18 countries.
+            </p>
+            <Link
+              to="/about"
+              className="link-underline font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
+            >
+              More about Vedaa
+            </Link>
+          </div>
         </div>
       </section>
 

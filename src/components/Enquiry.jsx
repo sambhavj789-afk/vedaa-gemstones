@@ -71,7 +71,7 @@ export default function Enquiry() {
 
   return (
     <section className="bg-ink text-porcelain">
-      <div className="mx-auto max-w-shell px-6 py-24 md:px-10 md:py-32">
+      <div className="mx-auto max-w-shell px-6 py-28 md:px-10 md:py-40">
         <div className="grid gap-16 lg:grid-cols-12 lg:gap-20">
           <div className="reveal lg:col-span-5">
             <p className="eyebrow">{membership ? 'Alis by Vedaa' : 'Enquire'}</p>

@@ -11,7 +11,7 @@ const pages = [
 export default function Footer() {
   return (
     <footer className="bg-ink">
-      <div className="mx-auto max-w-shell px-6 py-14 md:px-10">
+      <div className="mx-auto max-w-shell px-6 py-16 md:px-10">
         <div className="rule" />
         {/* Three columns rather than two pushed to opposite edges: at the
             shell's full 84rem that left a dead gap down the middle. */}

@@ -119,11 +119,9 @@
 @keyframes glowIn {
   from {
     opacity: 0;
-    transform: scale(0.85);
   }
   to {
     opacity: 1;
-    transform: scale(1);
   }
 }
 
@@ -134,13 +132,11 @@
 @keyframes nameIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
-    letter-spacing: 0.08em;
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
     transform: none;
-    letter-spacing: normal;
   }
 }
 
@@ -196,18 +192,10 @@
 }
 
 /* Colour auras breathe slowly instead of sitting static */
-@keyframes auraPulse {
-  0%,
-  100% {
-    opacity: 0.16;
-  }
-  50% {
-    opacity: 0.3;
-  }
-}
-
+/* The colour behind a stone sits still. A glow that breathes forever reads
+   as a screensaver; one that simply is there reads as light in a room. */
 .aura-pulse {
-  animation: auraPulse 7s ease-in-out infinite;
+  opacity: 0.22;
 }
 
 .wa-in {
@@ -237,11 +225,9 @@
 @keyframes glowIn {
   from {
     opacity: 0;
-    transform: scale(0.55);
   }
   to {
     opacity: 1;
-    transform: scale(1);
   }
 }
 

@@ -11,7 +11,7 @@ const privileges = [
 export default function Alis() {
   return (
     <section className="bg-basalt">
-      <div className="mx-auto max-w-shell px-6 py-24 md:px-10 md:py-32">
+      <div className="mx-auto max-w-shell px-6 py-28 md:px-10 md:py-40">
         <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <div className="reveal">
             <p className="eyebrow">Alis by Vedaa</p>

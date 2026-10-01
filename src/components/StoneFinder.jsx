@@ -32,7 +32,7 @@ export default function StoneFinder() {
 
   return (
     <section className="bg-ink">
-      <div className="mx-auto max-w-shell px-6 py-24 md:px-10 md:py-32">
+      <div className="mx-auto max-w-shell px-6 py-28 md:px-10 md:py-40">
         <div className="reveal flex flex-wrap items-end justify-between gap-6">
           <div>
             <p className="eyebrow">Find your stone</p>

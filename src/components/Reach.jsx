@@ -3,7 +3,7 @@ const consults = ['India', 'China', 'United Kingdom', 'Germany', 'Vietnam', 'UAE
 export default function Reach() {
   return (
     <section className="bg-ink">
-      <div className="mx-auto max-w-shell px-6 py-24 md:px-10 md:py-28">
+      <div className="mx-auto max-w-shell px-6 py-28 md:px-10 md:py-36">
         <div className="rule" />
         <div className="grid gap-12 pt-14 lg:grid-cols-12 lg:gap-16">
           <div className="reveal lg:col-span-4">
