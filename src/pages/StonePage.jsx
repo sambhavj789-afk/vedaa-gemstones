@@ -72,7 +72,7 @@ export default function StonePage() {
               )}
             </div>
             {fine && (
-              <p className="mt-4 font-sans text-[0.84rem] uppercase tracking-widest2 text-porcelain/35">
+              <p className="mt-4 font-sans text-[0.88rem] uppercase tracking-widest2 text-porcelain/50">
                 Move over the photograph to examine the stone
               </p>
             )}
@@ -90,7 +90,7 @@ export default function StonePage() {
             <h1 className="mt-5 font-display text-5xl leading-none text-porcelain md:text-7xl">
               {stone.name}
             </h1>
-            <p className="mt-4 font-sans text-sm uppercase tracking-widest2 text-porcelain/40">
+            <p className="mt-4 font-sans text-[0.88rem] uppercase tracking-widest2 text-porcelain/55">
               {stone.species}
             </p>
 
@@ -99,7 +99,7 @@ export default function StonePage() {
               style={{ backgroundColor: stone.accent }}
             />
 
-            <p className="mt-8 max-w-md text-[0.95rem] leading-relaxed text-porcelain/70">
+            <p className="mt-8 max-w-md text-[1.05rem] leading-relaxed text-porcelain/70">
               {stone.description}
             </p>
             <p className="mt-6 font-display text-lg leading-snug text-gilt/90">
@@ -109,13 +109,13 @@ export default function StonePage() {
             <div className="mt-10">
               <Link
                 to={`/contact?stone=${encodeURIComponent(stone.name)}`}
-                className="inline-block border border-brass px-8 py-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
+                className="inline-block border border-brass px-8 py-3 font-sans text-[0.85rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
               >
                 Enquire about this stone
               </Link>
             </div>
 
-            <p className="mt-12 max-w-md border-t border-porcelain/10 pt-6 font-sans text-[0.84rem] leading-relaxed tracking-wide text-porcelain/45">
+            <p className="mt-12 max-w-md border-t border-porcelain/10 pt-6 font-sans text-[0.95rem] leading-relaxed tracking-wide text-porcelain/60">
               Certified by GIA, IGI or SSEF. Lifetime authenticity guarantee.
               Complimentary design consultation with every purchase.
             </p>
@@ -129,19 +129,19 @@ export default function StonePage() {
           <div className="flex items-center justify-between pt-8">
             <Link
               to={`/collection/${prev.slug}`}
-              className="link-underline font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/60 hover:text-porcelain"
+              className="link-underline font-sans text-[0.85rem] uppercase tracking-widest2 text-porcelain/60 hover:text-porcelain"
             >
               ← {prev.name}
             </Link>
             <Link
               to="/collection"
-              className="link-underline font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt"
+              className="link-underline font-sans text-[0.85rem] uppercase tracking-widest2 text-gilt"
             >
               All stones
             </Link>
             <Link
               to={`/collection/${next.slug}`}
-              className="link-underline font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/60 hover:text-porcelain"
+              className="link-underline font-sans text-[0.85rem] uppercase tracking-widest2 text-porcelain/60 hover:text-porcelain"
             >
               {next.name} →
             </Link>

@@ -39,14 +39,14 @@ export default function StoneFinder() {
             <h2 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-5xl">
               Which stone is yours?
             </h2>
-            <p className="mt-6 max-w-md font-sans text-sm leading-relaxed text-porcelain/55">
+            <p className="mt-6 max-w-md font-sans text-base leading-relaxed text-porcelain/70">
               The seven classical planets of the old sky, the seven lights
               the ancients could see, each carry a stone. Choose yours.
             </p>
           </div>
           <Link
             to="/collection"
-            className="link-underline font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt"
+            className="link-underline font-sans text-[0.85rem] uppercase tracking-widest2 text-gilt"
           >
             Walk the collection
           </Link>
@@ -64,7 +64,7 @@ export default function StoneFinder() {
               role="tab"
               aria-selected={i === index}
               onClick={() => setIndex(i)}
-              className={`-my-2 py-2 font-sans text-[0.8rem] uppercase tracking-widest2 transition-colors duration-300 ${
+              className={`-my-2 py-2 font-sans text-[0.85rem] uppercase tracking-widest2 transition-colors duration-300 ${
                 i === index
                   ? 'text-gilt'
                   : 'text-porcelain/45 hover:text-porcelain/80'
@@ -90,14 +90,14 @@ export default function StoneFinder() {
           >
             {stone.name}
           </h3>
-          <p className="fade-up relative mt-6 max-w-md font-sans text-[0.95rem] leading-relaxed text-porcelain/65" style={{ animationDelay: '0.15s' }}>
+          <p className="fade-up relative mt-6 max-w-md font-sans text-[1.05rem] leading-relaxed text-porcelain/65" style={{ animationDelay: '0.15s' }}>
             {entry.line}
           </p>
 
           <div className="fade-up relative mt-9" style={{ animationDelay: '0.25s' }}>
             <Link
               to={`/collection/${stone.slug}`}
-              className="inline-block border border-brass px-8 py-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
+              className="inline-block border border-brass px-8 py-3 font-sans text-[0.85rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
             >
               View {stone.name}
             </Link>

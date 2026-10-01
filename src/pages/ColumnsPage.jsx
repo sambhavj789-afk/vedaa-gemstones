@@ -13,7 +13,7 @@ export default function ColumnsPage() {
               <br />
               in the trade.
             </h1>
-            <p className="mt-8 max-w-lg text-[0.95rem] leading-relaxed text-porcelain/70">
+            <p className="mt-8 max-w-lg text-[1.05rem] leading-relaxed text-porcelain/70">
               Notes on sourcing, treatment and certification, and what moves in
               the gemstone market. Written for people who intend to own a stone
               for a long time.
@@ -31,7 +31,7 @@ export default function ColumnsPage() {
                   <div className="lg:col-span-4">
                     <p className="eyebrow">{column.date || column.category}</p>
                     {column.date && (
-                      <p className="mt-3 font-sans text-[0.84rem] uppercase tracking-widest2 text-porcelain/40">
+                      <p className="mt-3 font-sans text-[0.88rem] uppercase tracking-widest2 text-porcelain/40">
                         {column.category}
                       </p>
                     )}
@@ -45,12 +45,12 @@ export default function ColumnsPage() {
                         {column.title}
                       </Link>
                     </h2>
-                    <p className="mt-5 max-w-xl text-[0.95rem] leading-relaxed text-porcelain/65">
+                    <p className="mt-5 max-w-xl text-[1.05rem] leading-relaxed text-porcelain/65">
                       {column.standfirst}
                     </p>
                     <Link
                       to={`/columns/${column.slug}`}
-                      className="link-underline mt-7 inline-block font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt"
+                      className="link-underline mt-7 inline-block font-sans text-[0.85rem] uppercase tracking-widest2 text-gilt"
                     >
                       Read the column
                     </Link>
@@ -62,7 +62,7 @@ export default function ColumnsPage() {
           </div>
 
           <div className="pb-28 pt-16 md:pb-36">
-            <p className="max-w-lg text-[0.95rem] leading-relaxed text-porcelain/55">
+            <p className="max-w-lg text-[1.05rem] leading-relaxed text-porcelain/70">
               We publish when there is something worth saying rather than to a
               schedule.
             </p>

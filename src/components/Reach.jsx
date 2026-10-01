@@ -14,7 +14,7 @@ export default function Reach() {
           </div>
 
           <div className="reveal lg:col-span-8">
-            <p className="text-[0.95rem] leading-relaxed text-porcelain/65">
+            <p className="text-[1.05rem] leading-relaxed text-porcelain/65">
               Offline consultations are held in person in the cities below.
               Elsewhere, we work by appointment. Stones are shipped certified,
               insured and fully documented.
@@ -29,7 +29,7 @@ export default function Reach() {
                 </li>
               ))}
             </ul>
-            <p className="mt-12 flex flex-wrap gap-x-8 gap-y-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/45">
+            <p className="mt-12 flex flex-wrap gap-x-8 gap-y-3 font-sans text-[0.85rem] uppercase tracking-widest2 text-porcelain/45">
               <span>GIA certified</span>
               <span>IGI certified</span>
               <span>SSEF certified</span>

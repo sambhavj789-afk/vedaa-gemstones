@@ -4,7 +4,7 @@ import { gemstones } from '../data/gemstones'
 import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, mailTo, enquiryMessage, membershipMessage, MEMBERSHIP_SUBJECT, OTHER_STONE } from '../data/contact'
 
 const field =
-  'w-full border-b border-porcelain/20 bg-transparent py-3 font-sans text-[0.95rem] text-porcelain placeholder-porcelain/35 focus:border-gilt focus:outline-none'
+  'w-full border-b border-porcelain/20 bg-transparent py-3 font-sans text-[1.05rem] text-porcelain placeholder-porcelain/35 focus:border-gilt focus:outline-none'
 
 // The native dropdown list inherits the page ground, not the control's, so the
 // options need the dark palette spelled out or they render ivory on ivory.
@@ -90,7 +90,7 @@ export default function Enquiry() {
                 </>
               )}
             </h2>
-            <p className="mt-8 max-w-sm text-[0.95rem] leading-relaxed text-porcelain/65">
+            <p className="mt-8 max-w-sm text-[1.05rem] leading-relaxed text-porcelain/65">
               {membership
                 ? 'Tell us what you collect and what you are looking for. Membership is by application, there is no fee, and we reply to every one.'
                 : 'Send the stone, the size and the setting you have in mind. We reply with what is currently available, certification details and price.'}
@@ -107,11 +107,11 @@ export default function Enquiry() {
               </a>
               <a
                 href={mailTo('Enquiry: Vedaa gemstones')}
-                className="link-underline block font-sans text-sm text-porcelain/70"
+                className="link-underline block font-sans text-base text-porcelain/70"
               >
                 {EMAIL}
               </a>
-              <p className="pt-2 font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/45">
+              <p className="pt-2 font-sans text-[0.85rem] uppercase tracking-widest2 text-porcelain/45">
                 India
               </p>
             </div>
@@ -170,14 +170,14 @@ export default function Enquiry() {
                   <button
                     type="button"
                     onClick={sendWhatsApp}
-                    className="border border-brass px-8 py-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
+                    className="border border-brass px-8 py-3 font-sans text-[0.85rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
                   >
                     Message on WhatsApp
                   </button>
                   <button
                     type="button"
                     onClick={sendEmail}
-                    className="border border-porcelain/25 px-8 py-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/80 transition-colors duration-500 hover:border-porcelain hover:text-porcelain"
+                    className="border border-porcelain/25 px-8 py-3 font-sans text-[0.85rem] uppercase tracking-widest2 text-porcelain/80 transition-colors duration-500 hover:border-porcelain hover:text-porcelain"
                   >
                     Send email
                   </button>

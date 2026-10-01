@@ -13,7 +13,7 @@ export default function CollectionPage() {
               <br />
               at the source.
             </h1>
-            <p className="mt-8 max-w-lg text-[0.95rem] leading-relaxed text-porcelain/70">
+            <p className="mt-8 max-w-lg text-[1.05rem] leading-relaxed text-porcelain/70">
               What follows is a glimpse. Origin decides more about a gemstone
               than any other single factor, so we list it first, before colour,
               before carat, before price.
@@ -39,7 +39,7 @@ export default function CollectionPage() {
               </h2>
             </div>
             <div className="lg:col-span-7">
-              <p className="max-w-lg text-[0.95rem] leading-relaxed text-porcelain/70">
+              <p className="max-w-lg text-[1.05rem] leading-relaxed text-porcelain/70">
                 These twelve are the stones we keep photographed. The sourcing
                 network behind them reaches a good deal further, and most
                 requests are answered from stones already in hand or at origin.
@@ -48,7 +48,7 @@ export default function CollectionPage() {
               </p>
               <Link
                 to="/contact"
-                className="mt-10 inline-block border border-brass px-8 py-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
+                className="mt-10 inline-block border border-brass px-8 py-3 font-sans text-[0.85rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
               >
                 Ask for another stone
               </Link>

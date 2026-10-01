@@ -20,7 +20,7 @@ export default function Footer() {
             <p className="font-brand font-bold text-2xl tracking-[0.25em] text-porcelain">
               VEDAA
             </p>
-            <p className="mt-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/45">
+            <p className="mt-3 font-sans text-[0.85rem] uppercase tracking-widest2 text-porcelain/45">
               Natural gemstones
             </p>
           </div>
@@ -33,7 +33,7 @@ export default function Footer() {
                 <li key={page.to}>
                   <Link
                     to={page.to}
-                    className="link-underline font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/55 hover:text-porcelain"
+                    className="link-underline font-sans text-[0.85rem] uppercase tracking-widest2 text-porcelain/55 hover:text-porcelain"
                   >
                     {page.label}
                   </Link>
@@ -44,7 +44,7 @@ export default function Footer() {
 
           <div className="md:text-right">
             <p className="eyebrow">Contact (India)</p>
-            <div className="mt-4 flex flex-col gap-2 font-sans text-sm font-normal text-porcelain/75 md:items-end">
+            <div className="mt-4 flex flex-col gap-2 font-sans text-base font-normal text-porcelain/75 md:items-end">
               <span>{EMAIL}</span>
               <span>{PHONE_DISPLAY}</span>
               {INSTAGRAM && (
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="mt-12 font-sans text-sm uppercase tracking-widest2 text-porcelain/45">
+        <p className="mt-12 font-sans text-[0.88rem] uppercase tracking-widest2 text-porcelain/55">
           © {new Date().getFullYear()} Vedaa Gems
         </p>
       </div>

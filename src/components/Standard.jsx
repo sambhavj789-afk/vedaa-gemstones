@@ -25,7 +25,7 @@ export default function Standard() {
               <br />
               chosen well.
             </h2>
-            <p className="mt-8 max-w-md text-[0.95rem] leading-relaxed text-porcelain/70">
+            <p className="mt-8 max-w-md text-[1.05rem] leading-relaxed text-porcelain/70">
               Clients trust Vedaa because we pair a global sourcing network with
               standards we do not bend. Every stone is inspected and evaluated in
               the open, so what you buy holds its value and its integrity. From
@@ -53,7 +53,7 @@ export default function Standard() {
               style={{ transitionDelay: `${i * 140}ms` }}
             >
               <h3 className="font-display text-2xl">{pillar.title}</h3>
-              <p className="mt-4 max-w-xs text-[0.9rem] leading-relaxed text-porcelain/65">
+              <p className="mt-4 max-w-xs text-[1rem] leading-relaxed text-porcelain/65">
                 {pillar.body}
               </p>
             </div>
