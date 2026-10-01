@@ -29,7 +29,7 @@ export default function Reach() {
                 </li>
               ))}
             </ul>
-            <p className="mt-12 flex flex-wrap gap-x-8 gap-y-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain/45">
+            <p className="mt-12 flex flex-wrap gap-x-8 gap-y-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/45">
               <span>GIA certified</span>
               <span>IGI certified</span>
               <span>SSEF certified</span>

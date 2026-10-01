@@ -31,7 +31,7 @@ export default function ColumnsPage() {
                   <div className="lg:col-span-4">
                     <p className="eyebrow">{column.date || column.category}</p>
                     {column.date && (
-                      <p className="mt-3 font-sans text-[0.72rem] uppercase tracking-widest2 text-porcelain/40">
+                      <p className="mt-3 font-sans text-[0.84rem] uppercase tracking-widest2 text-porcelain/40">
                         {column.category}
                       </p>
                     )}
@@ -50,7 +50,7 @@ export default function ColumnsPage() {
                     </p>
                     <Link
                       to={`/columns/${column.slug}`}
-                      className="link-underline mt-7 inline-block font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
+                      className="link-underline mt-7 inline-block font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt"
                     >
                       Read the column
                     </Link>

@@ -41,13 +41,13 @@ export default function ColumnPage() {
             <div className="flex flex-wrap items-center justify-between gap-6">
               <Link
                 to="/columns"
-                className="link-underline font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain/60 hover:text-porcelain"
+                className="link-underline font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/60 hover:text-porcelain"
               >
                 ← All columns
               </Link>
               <Link
                 to={`/columns/${next.slug}`}
-                className="link-underline max-w-[18rem] text-right font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
+                className="link-underline max-w-[18rem] text-right font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt"
               >
                 {next.title} →
               </Link>

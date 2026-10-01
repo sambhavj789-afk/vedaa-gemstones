@@ -48,7 +48,7 @@ export default function CollectionPage() {
               </p>
               <Link
                 to="/contact"
-                className="mt-10 inline-block border border-brass px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
+                className="mt-10 inline-block border border-brass px-8 py-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
               >
                 Ask for another stone
               </Link>

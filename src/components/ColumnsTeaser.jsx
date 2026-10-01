@@ -16,7 +16,7 @@ export default function ColumnsTeaser() {
           </div>
           <Link
             to="/columns"
-            className="link-underline font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
+            className="link-underline font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt"
           >
             All columns
           </Link>
@@ -29,7 +29,7 @@ export default function ColumnsTeaser() {
               className="reveal border-b border-porcelain/12 py-10 md:border-b-0 md:pr-10 md:pt-12"
               style={{ transitionDelay: `${i * 110}ms` }}
             >
-              <p className="font-sans text-[0.72rem] uppercase tracking-widest2 text-brass">
+              <p className="font-sans text-[0.84rem] uppercase tracking-widest2 text-brass">
                 {column.date || column.category}
               </p>
               <h3 className="mt-5 font-display text-2xl leading-tight text-porcelain">

@@ -111,7 +111,7 @@ export default function Enquiry() {
               >
                 {EMAIL}
               </a>
-              <p className="pt-2 font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain/45">
+              <p className="pt-2 font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/45">
                 India
               </p>
             </div>
@@ -170,14 +170,14 @@ export default function Enquiry() {
                   <button
                     type="button"
                     onClick={sendWhatsApp}
-                    className="border border-brass px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
+                    className="border border-brass px-8 py-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
                   >
                     Message on WhatsApp
                   </button>
                   <button
                     type="button"
                     onClick={sendEmail}
-                    className="border border-porcelain/25 px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain/80 transition-colors duration-500 hover:border-porcelain hover:text-porcelain"
+                    className="border border-porcelain/25 px-8 py-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/80 transition-colors duration-500 hover:border-porcelain hover:text-porcelain"
                   >
                     Send email
                   </button>

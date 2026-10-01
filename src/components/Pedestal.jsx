@@ -93,7 +93,7 @@ export default function Pedestal({ stones = gemstones }) {
                     {stone.name}
                   </Link>
                 </h3>
-                <p className="mt-4 font-sans text-xs uppercase tracking-widest2 text-porcelain/40">
+                <p className="mt-4 font-sans text-sm uppercase tracking-widest2 text-porcelain/40">
                   {stone.species}
                 </p>
 
@@ -112,7 +112,7 @@ export default function Pedestal({ stones = gemstones }) {
                 <div className="mt-8">
                   <Link
                     to={`/collection/${stone.slug}`}
-                    className="link-underline font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
+                    className="link-underline font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt"
                   >
                     View {stone.name}
                   </Link>

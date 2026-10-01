@@ -1,5 +1,5 @@
 import Hero from '../components/Hero'
-import Credo from '../components/Credo'
+import Spectrum from '../components/Spectrum'
 import StoneFinder from '../components/StoneFinder'
 import Alis from '../components/Alis'
 
@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Hero />
 
-      <Credo />
+      <Spectrum />
 
       <StoneFinder />
 

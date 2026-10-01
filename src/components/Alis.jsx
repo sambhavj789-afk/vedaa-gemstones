@@ -45,18 +45,18 @@ export default function Alis() {
               <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
                 <Link
                   to="/contact?about=membership"
-                  className="border border-brass px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
+                  className="border border-brass px-8 py-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
                 >
                   Become a member
                 </Link>
                 <Link
                   to="/contact"
-                  className="link-underline font-sans text-[0.66rem] uppercase tracking-widest2 text-porcelain/55"
+                  className="link-underline font-sans text-[0.8rem] uppercase tracking-widest2 text-porcelain/55"
                 >
                   Request an introduction
                 </Link>
               </div>
-              <p className="mt-6 max-w-md font-sans text-[0.72rem] leading-relaxed tracking-wide text-porcelain/40">
+              <p className="mt-6 max-w-md font-sans text-[0.84rem] leading-relaxed tracking-wide text-porcelain/40">
                 Membership is by application and kept deliberately small. There is
                 no fee; we ask only that we are a genuine fit for what you collect.
               </p>

@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="rise-3 mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 md:mt-16">
           <Link
             to="/collection"
-            className="border border-brass px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
+            className="border border-brass px-8 py-3 font-sans text-[0.8rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
           >
             View the collection
           </Link>
