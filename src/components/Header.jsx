@@ -78,7 +78,7 @@ export default function Header() {
                   <NavLink
                     to={link.to}
                     className={({ isActive }) =>
-                      `link-underline font-sans text-[0.78rem] uppercase tracking-[0.16em] transition-colors ${
+                      `link-underline font-sans text-[0.85rem] uppercase tracking-[0.16em] transition-colors ${
                         isActive
                           ? 'text-gilt'
                           : 'text-porcelain/75 hover:text-porcelain'
