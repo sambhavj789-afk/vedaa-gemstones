@@ -87,7 +87,7 @@ export default function StonePage() {
                 </span>
               ))}
             </p>
-            <h1 className="mt-5 font-display text-5xl leading-none text-porcelain md:text-7xl">
+            <h1 className="mt-5 font-display text-[2.5rem] leading-tight text-porcelain md:text-[3.5rem]">
               {stone.name}
             </h1>
             <p className="mt-4 font-sans text-[0.88rem] uppercase tracking-widest2 text-porcelain/55">

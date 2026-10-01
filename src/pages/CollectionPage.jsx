@@ -8,7 +8,7 @@ export default function CollectionPage() {
         <div className="mx-auto max-w-shell px-6 md:px-10">
           <div className="reveal">
             <p className="eyebrow">The collection</p>
-            <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-6xl">
+            <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-5xl">
               Chosen one at a time,
               <br />
               at the source.

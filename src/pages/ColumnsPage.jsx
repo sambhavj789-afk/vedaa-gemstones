@@ -8,7 +8,7 @@ export default function ColumnsPage() {
         <div className="mx-auto max-w-shell px-6 pt-28 md:px-10 md:pt-36">
           <div className="reveal max-w-2xl">
             <p className="eyebrow">Columns of Vedaa</p>
-            <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-6xl">
+            <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-5xl">
               What we are reading
               <br />
               in the trade.

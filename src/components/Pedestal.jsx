@@ -88,7 +88,7 @@ export default function Pedestal({ stones = gemstones }) {
 
               <div className="reveal">
                 <Origins list={stone.origins} />
-                <h3 className="mt-5 font-display text-5xl leading-none text-porcelain md:text-6xl">
+                <h3 className="mt-5 font-display text-4xl leading-tight text-porcelain md:text-[2.75rem]">
                   <Link to={`/collection/${stone.slug}`} className="transition-colors hover:text-gilt">
                     {stone.name}
                   </Link>
