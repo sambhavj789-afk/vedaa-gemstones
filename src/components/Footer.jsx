@@ -45,8 +45,8 @@ export default function Footer() {
           <div className="md:text-right">
             <p className="eyebrow">Contact (India)</p>
             <div className="mt-4 flex flex-col gap-2 font-sans text-base font-normal text-porcelain/75 md:items-end">
-              <span>{EMAIL}</span>
               <span>{PHONE_DISPLAY}</span>
+              <span>{EMAIL}</span>
               {INSTAGRAM && (
                 <a
                   href={INSTAGRAM}

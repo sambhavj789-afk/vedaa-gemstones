@@ -90,7 +90,13 @@ export default function Enquiry() {
                 </>
               )}
             </h2>
-            <div className="mt-8 space-y-3">
+            <p className="mt-8 max-w-sm text-[1.05rem] leading-relaxed text-porcelain/65">
+              {membership
+                ? 'Tell us what you collect and what you are looking for. Membership is by application, there is no fee, and we reply to every one.'
+                : 'Send the stone, the size and the setting you have in mind. We reply with what is currently available, certification details and price.'}
+            </p>
+
+            <div className="mt-12 space-y-3">
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
@@ -109,12 +115,6 @@ export default function Enquiry() {
                 India
               </p>
             </div>
-
-            <p className="mt-10 max-w-sm text-[1.05rem] leading-relaxed text-porcelain/65">
-              {membership
-                ? 'Tell us what you collect and what you are looking for. Membership is by application, there is no fee, and we reply to every one.'
-                : 'Send the stone, the size and the setting you have in mind. We reply with what is currently available, certification details and price.'}
-            </p>
           </div>
 
           <div className="reveal lg:col-span-7">
