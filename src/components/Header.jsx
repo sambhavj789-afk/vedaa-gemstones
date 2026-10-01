@@ -72,13 +72,13 @@ export default function Header() {
           </Link>
 
           <nav className="hidden md:block" aria-label="Primary">
-            <ul className="flex items-center gap-8">
+            <ul className="flex items-center gap-10">
               {links.map((link) => (
                 <li key={link.to}>
                   <NavLink
                     to={link.to}
                     className={({ isActive }) =>
-                      `link-underline font-sans text-[0.85rem] uppercase tracking-[0.16em] transition-colors ${
+                      `link-underline font-sans text-[0.66rem] uppercase tracking-widest2 transition-colors ${
                         isActive
                           ? 'text-gilt'
                           : 'text-porcelain/75 hover:text-porcelain'
