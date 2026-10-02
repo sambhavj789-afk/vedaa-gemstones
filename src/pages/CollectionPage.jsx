@@ -6,22 +6,18 @@ export default function CollectionPage() {
     <>
       <section className="bg-ink pt-28 md:pt-36">
         <div className="mx-auto max-w-shell px-6 md:px-10">
-          <div className="reveal grid gap-10 lg:grid-cols-12 lg:gap-16">
-            <div className="lg:col-span-6">
-              <p className="eyebrow">The collection</p>
-              <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-5xl">
-                Chosen one at a time,
-                <br />
-                at the source.
-              </h1>
-            </div>
-            <div className="lg:col-span-6 lg:self-end">
-              <p className="max-w-lg text-[1.05rem] leading-relaxed text-porcelain/70">
-                What follows is a glimpse. Origin decides more about a gemstone
-                than any other single factor, so we list it first, before colour,
-                before carat, before price.
-              </p>
-            </div>
+          <div className="reveal">
+            <p className="eyebrow">The collection</p>
+            <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-5xl">
+              Chosen one at a time,
+              <br />
+              at the source.
+            </h1>
+            <p className="mt-8 max-w-lg text-[1.05rem] leading-relaxed text-porcelain/70">
+              What follows is a glimpse. Origin decides more about a gemstone
+              than any other single factor, so we list it first, before colour,
+              before carat, before price.
+            </p>
           </div>
         </div>
       </section>
