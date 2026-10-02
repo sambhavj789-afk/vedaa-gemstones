@@ -8,12 +8,12 @@ export default function CollectionPage() {
         <div className="mx-auto max-w-shell px-6 md:px-10">
           <div className="reveal">
             <p className="eyebrow">The collection</p>
-            <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-5xl">
+            <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-6xl">
               Chosen one at a time,
               <br />
               at the source.
             </h1>
-            <p className="mt-8 max-w-lg text-[1.05rem] leading-relaxed text-porcelain/70">
+            <p className="mt-8 max-w-lg text-[0.95rem] leading-relaxed text-porcelain/70">
               What follows is a glimpse. Origin decides more about a gemstone
               than any other single factor, so we list it first, before colour,
               before carat, before price.

@@ -88,21 +88,21 @@ export default function Pedestal({ stones = gemstones }) {
 
               <div className="reveal">
                 <Origins list={stone.origins} />
-                <h3 className="mt-5 font-display text-4xl leading-tight text-porcelain md:text-[2.75rem]">
+                <h3 className="mt-5 font-display text-5xl leading-none text-porcelain md:text-6xl">
                   <Link to={`/collection/${stone.slug}`} className="transition-colors hover:text-gilt">
                     {stone.name}
                   </Link>
                 </h3>
-                <p className="mt-4 font-sans text-[0.88rem] uppercase tracking-widest2 text-porcelain/55">
+                <p className="mt-4 font-sans text-xs uppercase tracking-widest2 text-porcelain/40">
                   {stone.species}
                 </p>
 
                 <div className="mt-8 h-px w-16 bg-brass" />
 
-                <p className="mt-8 max-w-md text-[1.05rem] leading-relaxed text-porcelain/70">
+                <p className="mt-8 max-w-md text-[0.95rem] leading-relaxed text-porcelain/70">
                   {stone.description}
                 </p>
-                <p className="mt-6 font-display text-lg leading-snug text-gilt/90">
+                <p className="mt-6 font-sans text-xl font-light leading-snug text-gilt/85">
                   {stone.note}
                 </p>
 
@@ -112,7 +112,7 @@ export default function Pedestal({ stones = gemstones }) {
                 <div className="mt-8">
                   <Link
                     to={`/collection/${stone.slug}`}
-                    className="link-underline font-sans text-[0.85rem] uppercase tracking-widest2 text-gilt"
+                    className="link-underline font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt"
                   >
                     View {stone.name}
                   </Link>
