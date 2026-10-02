@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
-import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, mailTo, mailtoCompose, gmailCompose, outlookCompose, enquiryMessage, membershipMessage, MEMBERSHIP_SUBJECT, OTHER_STONE } from '../data/contact'
+import { EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_LINK, mailTo, mailtoCompose, enquiryMessage, membershipMessage, MEMBERSHIP_SUBJECT, OTHER_STONE } from '../data/contact'
 
 const field =
   'w-full border-b border-porcelain/20 bg-transparent py-3 font-sans text-[1.05rem] text-porcelain placeholder-porcelain/35 focus:border-gilt focus:outline-none'
@@ -16,8 +16,6 @@ export default function Enquiry() {
   // Arriving from the Alis membership button rather than from a stone.
   const membership = searchParams.get('about') === 'membership'
   const [form, setForm] = useState({ stone: preselected, message: '' })
-  const [mailOpen, setMailOpen] = useState(false)
-  const [copied, setCopied] = useState(false)
 
   // The pathname does not change between /contact?stone=A and ?stone=B, so the
   // component never remounts and the initial state above would go stale.
@@ -51,26 +49,9 @@ export default function Enquiry() {
     }
   }
 
-  // Clicking Send email opens a choice rather than firing mailto: blind. On a
-  // desktop with no mail client registered mailto: does nothing at all and the
-  // button reads as broken, so the webmail routes sit beside it as equals.
-  const routes = () => {
-    const c = compose()
-    return [
-      { label: 'Mail app', href: mailtoCompose(c.subject, c.body), sameTab: true },
-      { label: 'Gmail', href: gmailCompose(c.subject, c.body) },
-      { label: 'Outlook', href: outlookCompose(c.subject, c.body) },
-    ]
-  }
-
-  const copyAddress = async () => {
-    try {
-      await navigator.clipboard.writeText(EMAIL)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2400)
-    } catch {
-      // Clipboard blocked by the browser: the address is shown on the page.
-    }
+  const sendEmail = () => {
+    const composed = compose()
+    window.location.href = mailtoCompose(composed.subject, composed.body)
   }
 
   const sendWhatsApp = () => {
@@ -191,45 +172,12 @@ export default function Enquiry() {
                   </button>
                   <button
                     type="button"
-                    onClick={() => setMailOpen((v) => !v)}
-                    aria-expanded={mailOpen}
+                    onClick={sendEmail}
                     className="border border-porcelain/25 px-8 py-3 font-sans text-[0.85rem] uppercase tracking-widest2 text-porcelain/80 transition-colors duration-500 hover:border-porcelain hover:text-porcelain"
                   >
                     Send email
                   </button>
                 </div>
-
-                {mailOpen && (
-                  <div className="fade-up mt-7 border-t border-porcelain/12 pt-6">
-                    <p className="font-sans text-[0.72rem] uppercase tracking-widest2 text-porcelain/45">
-                      Open your message in
-                    </p>
-                    <div className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-3">
-                      {routes().map((r) => (
-                        <a
-                          key={r.label}
-                          href={r.href}
-                          {...(r.sameTab ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
-                          className="link-underline font-sans text-[0.85rem] uppercase tracking-widest2 text-gilt"
-                        >
-                          {r.label}
-                        </a>
-                      ))}
-                      <button
-                        type="button"
-                        onClick={copyAddress}
-                        className="link-underline font-sans text-[0.85rem] uppercase tracking-widest2 text-porcelain/55 hover:text-porcelain"
-                      >
-                        {copied ? 'Address copied' : 'Copy address'}
-                      </button>
-                    </div>
-                    <p className="mt-5 max-w-sm font-sans text-[0.85rem] leading-relaxed text-porcelain/45">
-                      Mail app opens Outlook, Apple Mail or whichever client this
-                      computer uses. If nothing happens, none is set up here, and
-                      Gmail or Outlook will open in the browser instead.
-                    </p>
-                  </div>
-                )}
               </div>
             </div>
           </div>
