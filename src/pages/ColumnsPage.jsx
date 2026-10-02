@@ -6,18 +6,22 @@ export default function ColumnsPage() {
     <div className="pt-16 md:pt-[4.25rem]">
       <section className="bg-ink">
         <div className="mx-auto max-w-shell px-6 pt-28 md:px-10 md:pt-36">
-          <div className="reveal max-w-2xl">
-            <p className="eyebrow">Columns of Vedaa</p>
-            <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-5xl">
-              What we are reading
-              <br />
-              in the trade.
-            </h1>
-            <p className="mt-8 max-w-lg text-[1.05rem] leading-relaxed text-porcelain/70">
-              Notes on sourcing, treatment and certification, and what moves in
-              the gemstone market. Written for people who intend to own a stone
-              for a long time.
-            </p>
+          <div className="reveal grid gap-10 lg:grid-cols-12 lg:gap-16">
+            <div className="lg:col-span-6">
+              <p className="eyebrow">Columns of Vedaa</p>
+              <h1 className="mt-6 font-display text-4xl leading-tight text-porcelain md:text-5xl">
+                What we are reading
+                <br />
+                in the trade.
+              </h1>
+            </div>
+            <div className="lg:col-span-6 lg:self-end">
+              <p className="max-w-lg text-[1.05rem] leading-relaxed text-porcelain/70">
+                Notes on sourcing, treatment and certification, and what moves in
+                the gemstone market. Written for people who intend to own a stone
+                for a long time.
+              </p>
+            </div>
           </div>
 
           <div className="mt-20 md:mt-28">
