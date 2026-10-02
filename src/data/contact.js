@@ -18,6 +18,21 @@ export const MEMBERSHIP_SUBJECT = 'Application: Alis by Vedaa'
 export const membershipMessage = () =>
   'Hi, I would like to apply for membership of Alis by Vedaa.'
 
+// Three ways to open a composed message, offered side by side rather than
+// one being assumed. mailto: is the right default where a mail client is set
+// up, and on a desktop where none is it does nothing at all -- which is why
+// the webmail routes sit beside it instead of behind an apology.
+const q = (s) => encodeURIComponent(s)
+
+export const mailtoCompose = (subject = '', body = '') =>
+  `mailto:${EMAIL}?subject=${q(subject)}&body=${q(body)}`
+
+export const gmailCompose = (subject = '', body = '') =>
+  `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${q(subject)}&body=${q(body)}`
+
+export const outlookCompose = (subject = '', body = '') =>
+  `https://outlook.live.com/mail/0/deeplink/compose?to=${EMAIL}&subject=${q(subject)}&body=${q(body)}`
+
 // The dropdown's catch-all. Kept here so the option value and the sentence
 // that handles it cannot drift apart.
 export const OTHER_STONE = 'Something not listed'
