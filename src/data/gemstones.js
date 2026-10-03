@@ -9,7 +9,7 @@ export const gemstones = [
     macro: '/images/macro/emerald.webp',
     accent: '#1E7A4F',
     origins: ['Colombia', 'Zambia', 'Brazil'],
-    note: 'Mercury’s stone. Origin narrows the field; colour settles it.',
+    note: 'Nearly every emerald holds a garden inside. It is how you know it grew.',
     description:
       'We source exceptional natural emeralds from Colombia, Zambia and Brazil, the regions that produce the world’s finest green gemstones. Each stone is selected for depth of colour, natural integrity and lasting value.',
   },
@@ -21,7 +21,7 @@ export const gemstones = [
     macro: '/images/macro/ruby.webp',
     accent: '#A31626',
     origins: ['Myanmar', 'Mozambique', 'Sri Lanka'],
-    note: 'The Sun’s stone. Unheated where we can get it, declared where not.',
+    note: 'Unheated where we can find it, so the red is the stone’s own.',
     description:
       'Premium rubies from Myanmar, Mozambique and Sri Lanka, renowned for exceptional colour and brilliance. Every stone is chosen for its vivid red hue, natural authenticity and lasting value.',
   },
@@ -33,7 +33,7 @@ export const gemstones = [
     macro: '/images/macro/blue-sapphire.webp',
     accent: '#2946C4',
     origins: ['Sri Lanka', 'Kashmir', 'Madagascar'],
-    note: 'Saturn’s stone. We buy the stone, not the name of a valley.',
+    note: 'The finest hold a velvet softness, from inclusions too fine to see.',
     description:
       'Our natural blue sapphires are ethically mined from renowned origins including Sri Lanka, Kashmir and Madagascar. Each is selected for its rich blue tone and exceptional quality.',
   },
@@ -45,7 +45,7 @@ export const gemstones = [
     macro: '/images/macro/yellow-sapphire.webp',
     accent: '#D9A521',
     origins: ['Sri Lanka', 'Madagascar', 'Tanzania'],
-    note: 'Jupiter’s stone. Heat can make this colour, so the report matters.',
+    note: 'A gold with no brown in it, which is rarer than it sounds.',
     description:
       'Natural yellow sapphires from top origins including Sri Lanka, Madagascar and Tanzania, prized for rich colour and clarity. Each stone is ethically sourced and chosen to reflect timeless elegance.',
   },
@@ -69,7 +69,7 @@ export const gemstones = [
     macro: '/images/macro/pearl.webp',
     accent: '#C9C0B0',
     origins: ['Japan', 'South Sea'],
-    note: 'Selected on lustre before size, and carried for the Moon.',
+    note: 'Lustre before size. A small pearl with depth outshines a big one without.',
     description:
       'Our pearls come from the finest waters of Japan and the South Sea, selected for natural lustre and a smooth finish. Timeless in appeal, each pearl reflects understated elegance.',
   },
@@ -81,7 +81,7 @@ export const gemstones = [
     macro: '/images/macro/tahitian-pearl.webp',
     accent: '#7A6B72',
     origins: ['French Polynesia'],
-    note: 'The colour is the oyster’s, not a dye bath’s.',
+    note: 'Peacock, aubergine, steel. Every shade of it the oyster’s own.',
     description:
       'Tahitian pearls from the lagoons of French Polynesia, celebrated for their natural dark hues and radiant lustre. Each pearl carries a distinctive allure that makes every piece exceptional.',
   },
@@ -93,7 +93,7 @@ export const gemstones = [
     macro: '/images/macro/aquamarine.webp',
     accent: '#57B4D6',
     origins: ['Brazil', 'Madagascar'],
-    note: 'Colour deepens with size, which is why small stones look pale.',
+    note: 'The colour deepens with size, which is why a large one stays with you.',
     description:
       'Aquamarine, as a symbol of serene luxury: pure, luminous and timeless. Formed deep within the earth over millions of years, the finest stones come from Brazil and Madagascar, known for exceptional clarity and a tranquil blue hue.',
   },
@@ -105,7 +105,7 @@ export const gemstones = [
     macro: '/images/macro/black-opal.webp',
     accent: '#2F8078',
     origins: ['Australia'],
-    note: 'Venus’s stone. Solid, never a slice on a dark backing.',
+    note: 'The darker the body, the brighter the colour runs across it.',
     description:
       'Our black opals are sourced from Australia, home to the world’s finest and rarest deposits. Formed over millions of years within ironstone, their naturally dark body highlights the vivid flashes of colour that make each stone extraordinary.',
   },
@@ -117,7 +117,7 @@ export const gemstones = [
     macro: '/images/macro/white-coral.webp',
     accent: '#D8CFC0',
     origins: ['Mediterranean Sea', 'Italy'],
-    note: 'Worn for Mars. Whole coral, not powder pressed back together.',
+    note: 'A few millimetres of growth a year, then cut by hand.',
     description:
       'White coral is valued for its smooth texture and soft, natural lustre. The finest originates in the Mediterranean, particularly along the coasts of Italy, where slow-growing coral forms the dense structure prized in fine jewellery.',
   },
@@ -129,7 +129,7 @@ export const gemstones = [
     macro: '/images/macro/turquoise.webp',
     accent: '#37A79E',
     origins: ['Iran', 'United States'],
-    note: 'Untreated material, matrix intact.',
+    note: 'Untreated, with the rock it grew in still webbed through.',
     description:
       'Turquoise sourced from renowned mines in Iran and the United States, known for producing some of the finest material available. Formed in mineral-rich arid regions over millions of years, it is admired for its vibrant blue and enduring appeal.',
   },
@@ -141,7 +141,7 @@ export const gemstones = [
     macro: '/images/macro/tanzanite.webp',
     accent: '#5B4FC7',
     origins: ['Tanzania'],
-    note: 'One deposit on earth. Nowhere else.',
+    note: 'One deposit on earth, and it turns blue to violet as you move.',
     description:
       'Tanzanite is sourced exclusively from Tanzania, the only place in the world where it is found. Discovered in the foothills of Mount Kilimanjaro, it is treasured for captivating violet-blue hues and remarkable rarity.',
   },
