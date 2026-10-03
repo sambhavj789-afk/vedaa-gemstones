@@ -43,7 +43,7 @@ export default function Footer() {
           </nav>
 
           <div className="md:text-right">
-            <p className="eyebrow">Contact (India)</p>
+            <p className="eyebrow">Contact</p>
             <div className="mt-4 flex flex-col gap-2 font-sans text-base font-normal text-porcelain/75 md:items-end">
               <span>{PHONE_DISPLAY}</span>
               <span>{EMAIL}</span>

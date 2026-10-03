@@ -9,7 +9,7 @@ export const gemstones = [
     macro: '/images/macro/emerald.webp',
     accent: '#1E7A4F',
     origins: ['Colombia', 'Zambia', 'Brazil'],
-    note: 'Depth of colour over everything else. Mercury’s stone.',
+    note: 'Mercury’s stone. Origin narrows the field; colour settles it.',
     description:
       'We source exceptional natural emeralds from Colombia, Zambia and Brazil, the regions that produce the world’s finest green gemstones. Each stone is selected for depth of colour, natural integrity and lasting value.',
   },
@@ -21,7 +21,7 @@ export const gemstones = [
     macro: '/images/macro/ruby.webp',
     accent: '#A31626',
     origins: ['Myanmar', 'Mozambique', 'Sri Lanka'],
-    note: 'The Sun’s stone: vivid red, unheated wherever possible.',
+    note: 'The Sun’s stone. Unheated where we can get it, declared where not.',
     description:
       'Premium rubies from Myanmar, Mozambique and Sri Lanka, renowned for exceptional colour and brilliance. Every stone is chosen for its vivid red hue, natural authenticity and lasting value.',
   },
@@ -33,7 +33,7 @@ export const gemstones = [
     macro: '/images/macro/blue-sapphire.webp',
     accent: '#2946C4',
     origins: ['Sri Lanka', 'Kashmir', 'Madagascar'],
-    note: 'Ethically mined, single-origin where stated, and worn for Saturn.',
+    note: 'Saturn’s stone. We buy the stone, not the name of a valley.',
     description:
       'Our natural blue sapphires are ethically mined from renowned origins including Sri Lanka, Kashmir and Madagascar. Each is selected for its rich blue tone and exceptional quality.',
   },
@@ -45,7 +45,7 @@ export const gemstones = [
     macro: '/images/macro/yellow-sapphire.webp',
     accent: '#D9A521',
     origins: ['Sri Lanka', 'Madagascar', 'Tanzania'],
-    note: 'Jupiter’s stone, prized for saturation and clarity together.',
+    note: 'Jupiter’s stone. Heat can make this colour, so the report matters.',
     description:
       'Natural yellow sapphires from top origins including Sri Lanka, Madagascar and Tanzania, prized for rich colour and clarity. Each stone is ethically sourced and chosen to reflect timeless elegance.',
   },
@@ -81,7 +81,7 @@ export const gemstones = [
     macro: '/images/macro/tahitian-pearl.webp',
     accent: '#7A6B72',
     origins: ['French Polynesia'],
-    note: 'No two overtones are alike.',
+    note: 'The colour is the oyster’s, not a dye bath’s.',
     description:
       'Tahitian pearls from the lagoons of French Polynesia, celebrated for their natural dark hues and radiant lustre. Each pearl carries a distinctive allure that makes every piece exceptional.',
   },
@@ -93,7 +93,7 @@ export const gemstones = [
     macro: '/images/macro/aquamarine.webp',
     accent: '#57B4D6',
     origins: ['Brazil', 'Madagascar'],
-    note: 'Clarity first. The colour follows.',
+    note: 'Colour deepens with size, which is why small stones look pale.',
     description:
       'Aquamarine, as a symbol of serene luxury: pure, luminous and timeless. Formed deep within the earth over millions of years, the finest stones come from Brazil and Madagascar, known for exceptional clarity and a tranquil blue hue.',
   },
@@ -105,7 +105,7 @@ export const gemstones = [
     macro: '/images/macro/black-opal.webp',
     accent: '#2F8078',
     origins: ['Australia'],
-    note: 'Venus, in the rarest body tone opal takes.',
+    note: 'Venus’s stone. Solid, never a slice on a dark backing.',
     description:
       'Our black opals are sourced from Australia, home to the world’s finest and rarest deposits. Formed over millions of years within ironstone, their naturally dark body highlights the vivid flashes of colour that make each stone extraordinary.',
   },
@@ -117,7 +117,7 @@ export const gemstones = [
     macro: '/images/macro/white-coral.webp',
     accent: '#D8CFC0',
     origins: ['Mediterranean Sea', 'Italy'],
-    note: 'Worn for Mars: slow-grown, dense, and worked by hand.',
+    note: 'Worn for Mars. Whole coral, not powder pressed back together.',
     description:
       'White coral is valued for its smooth texture and soft, natural lustre. The finest originates in the Mediterranean, particularly along the coasts of Italy, where slow-growing coral forms the dense structure prized in fine jewellery.',
   },
