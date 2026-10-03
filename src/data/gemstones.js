@@ -9,7 +9,7 @@ export const gemstones = [
     macro: '/images/macro/emerald.webp',
     accent: '#1E7A4F',
     origins: ['Colombia', 'Zambia', 'Brazil'],
-    note: 'The emerald cut is named for it: colour first, sparkle second.',
+    note: 'The same element that makes a ruby red makes an emerald green.',
     description:
       'We source exceptional natural emeralds from Colombia, Zambia and Brazil, the regions that produce the world’s finest green gemstones. Each stone is selected for depth of colour, natural integrity and lasting value.',
   },
