@@ -9,7 +9,7 @@ export const gemstones = [
     macro: '/images/macro/emerald.webp',
     accent: '#1E7A4F',
     origins: ['Colombia', 'Zambia', 'Brazil'],
-    note: 'A garden of inclusions, and the proof it grew.',
+    note: 'Tiny marks inside are natural. A flawless emerald usually is not.',
     description:
       'We source exceptional natural emeralds from Colombia, Zambia and Brazil, the regions that produce the world’s finest green gemstones. Each stone is selected for depth of colour, natural integrity and lasting value.',
   },
@@ -33,7 +33,7 @@ export const gemstones = [
     macro: '/images/macro/blue-sapphire.webp',
     accent: '#2946C4',
     origins: ['Sri Lanka', 'Kashmir', 'Madagascar'],
-    note: 'The finest hold a velvet softness, from inclusions too fine to see.',
+    note: 'The finest have a velvet softness, as if the light sits just inside.',
     description:
       'Our natural blue sapphires are ethically mined from renowned origins including Sri Lanka, Kashmir and Madagascar. Each is selected for its rich blue tone and exceptional quality.',
   },
@@ -57,7 +57,7 @@ export const gemstones = [
     macro: '/images/macro/pink-sapphire.webp',
     accent: '#C4527E',
     origins: ['Sri Lanka', 'Madagascar'],
-    note: 'Cut to hold the hue, not just the weight.',
+    note: 'Cut to hold the colour, not just the weight.',
     description:
       'Pink sapphires sourced from trusted mines in Sri Lanka and Madagascar, chosen for vibrant hue and natural brilliance. Each stone is ethically procured and expertly cut to show its beauty in every detail.',
   },
@@ -105,7 +105,7 @@ export const gemstones = [
     macro: '/images/macro/black-opal.webp',
     accent: '#2F8078',
     origins: ['Australia'],
-    note: 'The darker the body, the brighter the colour runs across it.',
+    note: 'The darker the stone, the brighter the colour runs across it.',
     description:
       'Our black opals are sourced from Australia, home to the world’s finest and rarest deposits. Formed over millions of years within ironstone, their naturally dark body highlights the vivid flashes of colour that make each stone extraordinary.',
   },
