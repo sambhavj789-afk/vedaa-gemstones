@@ -9,7 +9,7 @@ export const gemstones = [
     macro: '/images/macro/emerald.webp',
     accent: '#1E7A4F',
     origins: ['Colombia', 'Zambia', 'Brazil'],
-    note: 'Nearly every emerald holds a garden inside. It is how you know it grew.',
+    note: 'A garden of inclusions, and the proof it grew.',
     description:
       'We source exceptional natural emeralds from Colombia, Zambia and Brazil, the regions that produce the world’s finest green gemstones. Each stone is selected for depth of colour, natural integrity and lasting value.',
   },
