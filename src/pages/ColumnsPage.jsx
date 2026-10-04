@@ -27,16 +27,15 @@ export default function ColumnsPage() {
                 className="reveal border-t border-porcelain/12 py-12 md:py-16"
                 style={{ transitionDelay: `${i * 90}ms` }}
               >
-                <div className="grid gap-8 lg:grid-cols-12 lg:gap-16">
-                  <div className="lg:col-span-4">
-                    <p className="eyebrow">{column.date || column.category}</p>
-                    {column.date && (
-                      <p className="mt-3 font-sans text-[0.88rem] uppercase tracking-widest2 text-porcelain/40">
-                        {column.category}
-                      </p>
-                    )}
-                  </div>
-                  <div className="lg:col-span-8">
+                <p className="eyebrow">{column.category}</p>
+                {column.date && (
+                  <p className="mt-3 font-sans text-[0.88rem] uppercase tracking-widest2 text-porcelain/40">
+                    {column.date}
+                  </p>
+                )}
+
+                <div className="mt-7 grid gap-8 lg:grid-cols-12 lg:gap-16">
+                  <div className="lg:col-span-6">
                     <h2 className="font-display text-3xl leading-tight text-porcelain md:text-4xl">
                       <Link
                         to={`/columns/${column.slug}`}
@@ -45,7 +44,9 @@ export default function ColumnsPage() {
                         {column.title}
                       </Link>
                     </h2>
-                    <p className="mt-5 max-w-xl text-[1.05rem] leading-relaxed text-porcelain/65">
+                  </div>
+                  <div className="lg:col-span-6">
+                    <p className="text-[1.05rem] leading-relaxed text-porcelain/65">
                       {column.standfirst}
                     </p>
                     <Link
