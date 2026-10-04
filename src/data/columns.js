@@ -50,5 +50,3 @@ export const columns = [
     ],
   },
 ]
-
-export const latestColumns = (n = 3) => columns.slice(0, n)
