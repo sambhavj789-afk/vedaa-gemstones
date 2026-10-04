@@ -19,7 +19,7 @@ export default function Hero() {
 
         <div className="rise-2 mt-8 max-w-xl md:mt-10">
           <p className="font-display text-2xl leading-snug text-porcelain/90 md:text-3xl">
-            Natural gemstones of uncompromising purity, curated for legacy.
+            Natural gemstones, curated for legacy.
           </p>
           <p className="mt-6 max-w-md text-base leading-relaxed text-porcelain/65">
             Every stone sourced at origin, inspected without exception, and
