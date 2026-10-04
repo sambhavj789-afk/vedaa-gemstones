@@ -32,7 +32,7 @@ export default function ColumnsPage() {
                 {subjects.map((subject) => (
                   <li
                     key={subject}
-                    className="font-display text-xl text-porcelain/75 md:text-2xl"
+                    className="font-display text-2xl text-porcelain/80 md:text-3xl"
                   >
                     {subject}
                   </li>
