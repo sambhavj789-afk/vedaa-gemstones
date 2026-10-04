@@ -15,7 +15,7 @@ export default function Reach() {
 
           <div className="reveal lg:col-span-8">
             <p className="text-[1.05rem] leading-relaxed text-porcelain/65">
-              Offline consultations are held in person in the cities below.
+              Offline consultations are held in person in the countries below.
               Elsewhere, we work by appointment. Stones are shipped certified,
               insured and fully documented.
             </p>
