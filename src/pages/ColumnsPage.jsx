@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import { columns } from '../data/columns'
+import usePageTitle from '../hooks/usePageTitle'
 
 export default function ColumnsPage() {
+  usePageTitle('Columns')
   // Taken from the columns, not typed out beside them.
   const subjects = [...new Set(columns.map((c) => c.category))]
 

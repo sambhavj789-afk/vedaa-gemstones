@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import { PHONE_DISPLAY, WHATSAPP_NUMBER } from '../data/contact'
 
 const links = [
   { to: '/collection', label: 'Collection' },
@@ -147,7 +148,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <p className="eyebrow mt-16">+91 63503 19428</p>
+          <a href={`tel:+${WHATSAPP_NUMBER}`} className="eyebrow mt-16 self-start">{PHONE_DISPLAY}</a>
         </div>
       )}
     </>

@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import Pedestal from '../components/Pedestal'
+import usePageTitle from '../hooks/usePageTitle'
 
 export default function CollectionPage() {
+  usePageTitle('The Collection')
   return (
     <>
       <section className="bg-ink pt-28 md:pt-36">

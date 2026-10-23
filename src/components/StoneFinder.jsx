@@ -30,6 +30,18 @@ export default function StoneFinder() {
   // 2.4:1). Mixed toward ivory they clear 7:1 and keep the stone's hue.
   const tint = brighten(stone.accent)
 
+  // Tabs pattern: arrow keys move between planets, Tab leaves the row.
+  const onTabKey = (e) => {
+    const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key]
+    let next = step ? (index + step + planets.length) % planets.length : null
+    if (e.key === 'Home') next = 0
+    if (e.key === 'End') next = planets.length - 1
+    if (next === null) return
+    e.preventDefault()
+    setIndex(next)
+    e.currentTarget.querySelectorAll('[role="tab"]')[next]?.focus()
+  }
+
   return (
     <section className="bg-ink">
       <div className="mx-auto max-w-shell px-6 py-28 md:px-10 md:py-40">
@@ -56,6 +68,7 @@ export default function StoneFinder() {
           className="reveal mt-14 flex flex-wrap gap-x-8 gap-y-4 border-b border-porcelain/12 pb-6"
           role="tablist"
           aria-label="Planets"
+          onKeyDown={onTabKey}
         >
           {planets.map((p, i) => (
             <button
@@ -63,6 +76,7 @@ export default function StoneFinder() {
               type="button"
               role="tab"
               aria-selected={i === index}
+              tabIndex={i === index ? 0 : -1}
               onClick={() => setIndex(i)}
               className={`-my-2 py-2 font-sans text-[0.85rem] uppercase tracking-widest2 transition-colors duration-300 ${
                 i === index

@@ -71,7 +71,7 @@ export default function Enquiry() {
         <div className="grid gap-16 lg:grid-cols-12 lg:gap-20">
           <div className="reveal lg:col-span-5">
             <p className="eyebrow">{membership ? 'Alis by Vedaa' : 'Enquire'}</p>
-            <h2 className="mt-6 font-display text-4xl leading-tight md:text-5xl">
+            <h1 className="mt-6 font-display text-4xl leading-tight md:text-5xl">
               {membership ? (
                 <>
                   Apply to join
@@ -85,7 +85,7 @@ export default function Enquiry() {
                   you are looking for.
                 </>
               )}
-            </h2>
+            </h1>
             <p className="mt-8 max-w-sm text-[1.05rem] leading-relaxed text-porcelain/65">
               {membership
                 ? 'Tell us what you collect and what you are looking for. Membership is by application, there is no fee, and we reply to every one.'

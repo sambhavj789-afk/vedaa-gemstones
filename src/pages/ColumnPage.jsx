@@ -1,9 +1,11 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { columns } from '../data/columns'
+import usePageTitle from '../hooks/usePageTitle'
 
 export default function ColumnPage() {
   const { slug } = useParams()
   const index = columns.findIndex((c) => c.slug === slug)
+  usePageTitle(columns[index]?.title)
 
   if (index === -1) return <Navigate to="/columns" replace />
 

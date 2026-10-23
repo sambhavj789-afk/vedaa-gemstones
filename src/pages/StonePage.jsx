@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { gemstones } from '../data/gemstones'
+import usePageTitle from '../hooks/usePageTitle'
 
 export default function StonePage() {
   const { slug } = useParams()
   const index = gemstones.findIndex((s) => s.slug === slug)
+  usePageTitle(gemstones[index]?.name)
 
   const [loupe, setLoupe] = useState(null)
   const [fine, setFine] = useState(false)
@@ -53,6 +55,7 @@ export default function StonePage() {
               <img
                 src={stone.image}
                 alt={`${stone.name} on the Vedaa stand`}
+                fetchPriority="high"
                 className="h-full w-full object-cover"
               />
               {/* The loupe. Examine the stone the way a dealer would */}
@@ -72,7 +75,7 @@ export default function StonePage() {
               )}
             </div>
             {fine && (
-              <p className="mt-4 font-sans text-[0.62rem] uppercase tracking-widest2 text-porcelain/35">
+              <p className="mt-4 font-sans text-[0.72rem] uppercase tracking-widest2 text-porcelain/50">
                 Move over the photograph to examine the stone
               </p>
             )}
@@ -109,13 +112,13 @@ export default function StonePage() {
             <div className="mt-10">
               <Link
                 to={`/contact?stone=${encodeURIComponent(stone.name)}`}
-                className="inline-block border border-brass px-8 py-3 font-sans text-[0.66rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
+                className="inline-block border border-brass px-8 py-3 font-sans text-[0.85rem] uppercase tracking-widest2 text-gilt transition-colors duration-500 hover:bg-brass hover:text-ink"
               >
                 Enquire about this stone
               </Link>
             </div>
 
-            <p className="mt-12 max-w-md border-t border-porcelain/10 pt-6 font-sans text-[0.72rem] leading-relaxed tracking-wide text-porcelain/45">
+            <p className="mt-12 max-w-md border-t border-porcelain/10 pt-6 font-sans text-[0.85rem] leading-relaxed tracking-wide text-porcelain/60">
               Certified by GIA, IGI or SSEF. Lifetime authenticity guarantee.
               Complimentary design consultation with every purchase.
             </p>

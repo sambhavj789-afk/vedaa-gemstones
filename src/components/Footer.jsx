@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { EMAIL, INSTAGRAM, PHONE_DISPLAY } from '../data/contact'
+import { EMAIL, INSTAGRAM, PHONE_DISPLAY, WHATSAPP_NUMBER, mailTo } from '../data/contact'
 
 const pages = [
   { to: '/collection', label: 'Collection' },
@@ -45,8 +45,8 @@ export default function Footer() {
           <div className="md:text-right">
             <p className="eyebrow">Contact</p>
             <div className="mt-4 flex flex-col gap-2 font-sans text-base font-normal text-porcelain/75 md:items-end">
-              <span>{PHONE_DISPLAY}</span>
-              <span>{EMAIL}</span>
+              <a href={`tel:+${WHATSAPP_NUMBER}`} className="link-underline">{PHONE_DISPLAY}</a>
+              <a href={mailTo('Enquiry: Vedaa gemstones')} className="link-underline">{EMAIL}</a>
               {INSTAGRAM && (
                 <a
                   href={INSTAGRAM}
